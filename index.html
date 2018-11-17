@@ -8,17 +8,18 @@
 <!-- TODO: 
     + check all links vs buttons
     + check links href value
-    - check classes' names
-    - check requirments compliance
-    - check layouts compliance
+    + check classes' names
+    + check headers
+    + check requirments compliance
+    + check layouts compliance
     - run validator
 -->
-
 <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="http://placehold.it/154x64" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+                <img src="http://placehold.it/154x64" width="154" height="64" 
+                    alt="Логотип магазина мороженого Глейси">
             </a>
             <ul class="main-menu">
                 <li>
@@ -49,17 +50,21 @@
             <input type="radio" id="banner-3" name="main-slider">
 
             <ul class="main-banner-list">
-                <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Крем-брюле и пломбир с малиновым джемом">
-                    <p>Крем-брюле и пломбир с малиновым джемом</p>
+                <h2 class="visually-hidden">Основное предложение</h2>
+                <li class="main-banner-item">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" 
+                        alt="Баннер Крем-брюле и пломбир с малиновым джемом">
+                    <p class="main-banner-info">Крем-брюле и пломбир с малиновым джемом</p>
                 </li>
-                <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Шоколадный пломбир и лимонный сорбет">
-                    <p>Шоколадный пломбир и лимонный сорбет</p>
+                <li class="main-banner-item visually-hidden">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" 
+                        alt="Баннер Шоколадный пломбир и лимонный сорбет">
+                    <p class="main-banner-info">Шоколадный пломбир и лимонный сорбет</p>
                 </li>
-                <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Пломбир с помадкой и клубничный щербет">
-                    <p>Пломбир с помадкой и клубничный щербет</p>
+                <li class="main-banner-item visually-hidden">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" 
+                        alt="Баннер Пломбир с помадкой и клубничный щербет">
+                    <p class="main-banner-info">Пломбир с помадкой и клубничный щербет</p>
                 </li>
             </ul>
             <button class="button" type="button">Давайте оба!</button>
@@ -67,17 +72,17 @@
         <section class="special-offers">
             <h2 class="visually-hidden">Специальные предложения</h2>
             <ul class="special-offers-list">
-                <li>
-                    <h3>Малинка даром</h3>
-                    <p>
+                <li class="special-offers-item">
+                    <h3 class="special-offers-header">Малинка даром</h3>
+                    <p class="special-offers-description">
                         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
                         малинового варенья бесплатно.
                     </p>
                     <button class="button" type="button">Хочу варенье!</button>
                 </li>
-                <li>
-                    <h3>Шоколадки даром</h3>
-                    <p>
+                <li class="special-offers-item">
+                    <h3 class="special-offers-header">Шоколадки даром</h3>
+                    <p class="special-offers-description">
                         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
                         шоколадной присыпки совершенно бесплатно.
                     </p>
@@ -88,47 +93,52 @@
         <section class="icecreams">
             <h2 class="visually-hidden">Выбор мороженого</h2>
             <ul class="icecream-list">
-                <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Cливочное с апельсиновым джемом и цитрусовой стружкой">
+                <li class="icecream-item">
+                    <img src="http://placehold.it/267x267" width="267" height="267" 
+                        alt="Мороженое Cливочное с апельсиновым джемом и цитрусовой стружкой">
                     <p class="icecream-price">310 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                 </li>
-                <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочно-кофейное с кусочками шоколада">
+                <li class="icecream-item">
+                    <img src="http://placehold.it/267x267" width="267" height="267" 
+                        alt="Мороженое Сливочно-кофейное с кусочками шоколада">
                     <p class="icecream-price">380 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
                 </li>
-                <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочно-клубничное с присыпкой из белого шоколада">
+                <li class="icecream-item">
+                    <img src="http://placehold.it/267x267" width="267" height="267" 
+                        alt="Мороженое Сливочно-клубничное с присыпкой из белого шоколада">
                     <p class="icecream-price">355 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
                 </li>
-                <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочное крем-брюле с карамельной подливкой">
+                <li class="icecream-item">
+                    <img src="http://placehold.it/267x267" width="267" height="267" 
+                        alt="Мороженое Сливочное крем-брюле с карамельной подливкой">
                     <p class="icecream-price">415 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
                 </li>
             </ul>
         </section>
-        <section class="about">
-            <h2>
+        <section class="about-gllacy">
+            <h2 class="visually-hidden">Информация о магазине Глэйси</h2>
+            <b>
                 Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
                 собственного производства на развес
-            </h2>
-            <ul>
-                <li>
+            </b>
+            <ul class="features-list">
+                <li class="feature-item">
                     Все наше мороженое изготавливается на собственном производстве,
                     с использованием современного оборудования и проверенных временем технологий.
                 </li>
-                <li>
+                <li class="feature-item">
                     Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
                     Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                 </li>
-                <li>
+                <li class="feature-item">
                     Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
                     с которыми нас связывает долговременное сотрудничество.
                 </li>
-                <li>
+                <li class="feature-item">
                     Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
                     который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                 </li>
@@ -136,7 +146,7 @@
         </section>
         <article class="new-blog-record">
             <h2>Новое в нашем блоге</h2>
-            <h3><a href="#">10 способов сервировки фруктовых щербетов к cтолу</a></h3>
+            <h3><a href="blog.html">10 способов сервировки фруктовых щербетов к cтолу</a></h3>
         </article>
         <section class="subscribe">
             <h2 class="visually-hidden">Форма подписки на рассылку</h2>
