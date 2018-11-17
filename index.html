@@ -6,13 +6,14 @@
     <title>HTML Academy: Глейси</title>
 </head>
 <!-- TODO: 
-    - check all links vs buttons
-    - check links href value
+    + check all links vs buttons
+    + check links href value
     - check classes' names
     - check requirments compliance
     - check layouts compliance
     - run validator
 -->
+
 <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -21,21 +22,21 @@
             </a>
             <ul class="main-menu">
                 <li>
-                    <a href="#">Каталог</a>
+                    <a href="catalog.html">Каталог</a>
                     <ul class="catalog-sub-menu visually-hidden">
-                        <li><a>Новинки</a></li>
+                        <li><a href="latest.html">Новинки</a></li>
                         <li><a href="catalogcreamy.html">Сливочное</a></li>
-                        <li><a>Щербеты</a></li>
-                        <li><a>Фруктовый лед</a></li>
-                        <li><a>Мелорин</a></li>
+                        <li><a href="catalogsorbet.html">Щербеты</a></li>
+                        <li><a href="catalogfruitice.html">Фруктовый лед</a></li>
+                        <li><a href="catalogmelorin.html">Мелорин</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О Компании</a></li>
+                <li><a href="delivery_and_payment.html">Доставка и оплата</a></li>
+                <li><a href="about.html">О Компании</a></li>
             </ul>
-            <button class="search">Поиск</button>
-            <button class="login">Вход</button>
-            <button class="cart">Пусто</button>
+            <button class="search" type="button">Поиск</button>
+            <button class="login" type="button">Вход</button>
+            <button class="cart" type="button">Пусто</button>
         </nav>
         <p class="open-time">С 10 до 20, ежедневно</p>
         <p class="phone">812 450-25-25</p>
@@ -49,23 +50,19 @@
 
             <ul class="main-banner-list">
                 <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881"  
-                        alt="Баннер Крем-брюле и пломбир с малиновым джемом">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Крем-брюле и пломбир с малиновым джемом">
                     <p>Крем-брюле и пломбир с малиновым джемом</p>
                 </li>
                 <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881" 
-                        alt="Баннер Шоколадный пломбир и лимонный сорбет">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Шоколадный пломбир и лимонный сорбет">
                     <p>Шоколадный пломбир и лимонный сорбет</p>
                 </li>
                 <li>
-                    <img src="http://placehold.it/1045x881" width="1045" height="881" 
-                        alt="Баннер Пломбир с помадкой и клубничный щербет">
+                    <img src="http://placehold.it/1045x881" width="1045" height="881" alt="Баннер Пломбир с помадкой и клубничный щербет">
                     <p>Пломбир с помадкой и клубничный щербет</p>
                 </li>
             </ul>
-
-            <button class="button">Давайте оба!</button>
+            <button class="button" type="button">Давайте оба!</button>
         </section>
         <section class="special-offers">
             <h2 class="visually-hidden">Специальные предложения</h2>
@@ -76,7 +73,7 @@
                         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
                         малинового варенья бесплатно.
                     </p>
-                    <button class="button">Хочу варенье!</button>
+                    <button class="button" type="button">Хочу варенье!</button>
                 </li>
                 <li>
                     <h3>Шоколадки даром</h3>
@@ -84,7 +81,7 @@
                         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
                         шоколадной присыпки совершенно бесплатно.
                     </p>
-                    <button class="button">Хочу шоколадки!</button>
+                    <button class="button" type="button">Хочу шоколадки!</button>
                 </li>
             </ul>
         </section>
@@ -92,26 +89,22 @@
             <h2 class="visually-hidden">Выбор мороженого</h2>
             <ul class="icecream-list">
                 <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" 
-                        alt="Мороженое Cливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Cливочное с апельсиновым джемом и цитрусовой стружкой">
                     <p class="icecream-price">310 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                 </li>
                 <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" 
-                        alt="Мороженое Сливочно-кофейное с кусочками шоколада">
+                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочно-кофейное с кусочками шоколада">
                     <p class="icecream-price">380 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
                 </li>
                 <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" 
-                        alt="Мороженое Сливочно-клубничное с присыпкой из белого шоколада">
+                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочно-клубничное с присыпкой из белого шоколада">
                     <p class="icecream-price">355 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
                 </li>
                 <li class="icecream">
-                    <img src="http://placehold.it/267x267" width="267" height="267" 
-                        alt="Мороженое Сливочное крем-брюле с карамельной подливкой">
+                    <img src="http://placehold.it/267x267" width="267" height="267" alt="Мороженое Сливочное крем-брюле с карамельной подливкой">
                     <p class="icecream-price">415 &#8381; <span>/кг</span></p>
                     <p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
                 </li>
@@ -163,38 +156,41 @@
                     <span class="feedback-phone">8 812 450-25-25</span>
                     (с 10 до 20 ежедневно)
                 </p>
-                <button class="button">Форма обратной связи</button>
+                <button class="button" type="button">Форма обратной связи</button>
             </section>
         </section>
     </main>
     <footer class="main-footer">
         <ul class="social-links">
             <li class="titter-link">
-                <a href="#"><img src="http://placehold.it/32x32" width="32" height="32" 
-                    alt="Логотип Твиттер">Твиттер</a>
+                <a href="https://twitter.com">
+                    <img src="http://placehold.it/32x32" width="32" height="32" alt="Логотип Твиттер">Твиттер
+                </a>
             </li>
             <li class="instagram-link">
-                <a href="#"><img src="http://placehold.it/32x32" width="32" height="32" 
-                    alt="Логотип Инстаграмм">Инстаграмм</a>
+                <a href="https://www.instagram.com">
+                    <img src="http://placehold.it/32x32" width="32" height="32" alt="Логотип Инстаграмм">Инстаграмм
+                </a>
             </li>
             <li class="facebook-link">
-                <a href="#"><img src="http://placehold.it/32x32" width="32" height="32" 
-                    alt="Логотип Фейсбук">Фейсбук</a>
+                <a href="https://www.facebook.com">
+                    <img src="http://placehold.it/32x32" width="32" height="32" alt="Логотип Фейсбук">Фейсбук
+                </a>
             </li>
             <li class="vkontacte-link">
-                <a href="#"><img src="http://placehold.it/32x32" width="32" height="32"
-                    alt="Логотип ВКонтакте">ВКонтакте</a>
+                <a href="https://vk.com">
+                    <img src="http://placehold.it/32x32" width="32" height="32" alt="Логотип ВКонтакте">ВКонтакте
+                </a>
             </li>
         </ul>
         <ul class="footer-menu">
-            <li class="suppliers-link"><a href="#">Для поставщиков</a></li>
-            <li class="production-link"><a href="#">О производстве</a></li>
-            <li class="documents-link"><a href="#">Наши документы</a></li>
-            <li class="eco-standards-link"><a href="#">Экологические стандарты</a></li>
+            <li class="suppliers-link"><a href="suppliers.html">Для поставщиков</a></li>
+            <li class="production-link"><a href="production.html">О производстве</a></li>
+            <li class="documents-link"><a href="documents.html">Наши документы</a></li>
+            <li class="eco-standards-link"><a href="standards.html">Экологические стандарты</a></li>
         </ul>
         <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="http://placehold.it/108x39" width="108" height="39" 
-                alt="Логотип HTML Academy">HTML Academy
+            <img src="http://placehold.it/108x39" width="108" height="39" alt="Логотип HTML Academy">HTML Academy
         </a>
         <p class="copyright">
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
@@ -213,7 +209,7 @@
         <h3 class="visually-hidden">Форма обратной связи</h3>
         <b>Мы обязательно вам ответим!</b>
         <!-- TODO:  add form here -->
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
     </section>
 </body>
 
