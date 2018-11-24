@@ -207,17 +207,50 @@
     </footer>
 
     <section class="login-form">
-        <!-- TODO: add form here -->
+        <h2 class="visually-hidden">Форма входа в магазин</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="login_email" class="visually-hidden">Электронная почта</label>
+                <input type="email" name="login_email" id="login_email" placeholder="Электронная почта">
+            </p>
+            <p>
+                <label for="login_password" class="visually-hidden">Пароль</label>
+                <input type="password" name="login_password" id="login_password" placeholder="Пароль">
+            </p>
+            <button type="submit" class="button">Войти</button>
+            <p>
+                <a class="link" href="restore_password.html">Забыли пароль?</a>
+                <a class="link" href="new_user.html">Новая регистрация</a>
+            </p>
+        </form>
     </section>
 
     <section class="search-form">
-        <!-- TODO: add form here -->
+        <h2 class="visually-hidden">Форма поиска по сайту</h2>
+        <form action="https://echo.htmlacademy.ru" method="gets">
+            <label for="search_text" class="visually-hidden">Строка поиска</label>
+            <input type="text" name="search_text" id="search_text" placeholder="Что ищем?">
+        </form>
     </section>
 
     <section class="modal modal-feedback">
         <h3 class="visually-hidden">Форма обратной связи</h3>
         <b>Мы обязательно вам ответим!</b>
-        <!-- TODO:  add form here -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="feedback_name" class="visually-hidden">Ваше имя</label>
+                <input type="text" name="feedback_name" id="feedback_name" placeholder="Как вас зовут?">
+            </p>
+            <p>
+                <label for="feedback_email" class="visually-hidden">Ваша электронная почта</label>
+                <input type="email" name="feedback_email" id="feedback_email" placeholder="Ваша почта для ответа?">
+            </p>
+            <p>
+                <label for="feedback_message" class="visually-hidden">Ваше сообщение</label>
+                <textarea name="feedback_message" id="feedback_message" placeholder="Напишите что-нибудь..."></textarea>
+            </p>
+            <button type="submit" class="button">Отправить</button>
+        </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
