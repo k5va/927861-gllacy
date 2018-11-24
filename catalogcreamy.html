@@ -37,7 +37,7 @@
             </ul>
             <a class="button search" href="search.html">Поиск</a>
             <a class="button login" href="login.html">Вход</a>
-            <a class="button cart card-loaded" href="cart.html">2 товара</a>
+            <a class="button cart cart-loaded" href="cart.html">2 товара</a>
         </nav>
         <div class="main-header-contact-info">
             <p class="open-time">С 10 до 20, ежедневно</p>
@@ -233,6 +233,43 @@
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
         </p>
     </footer>
+
+    <section class="checkout-form">
+        <h2 class="visually-hidden">Состав корзины покупателя</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <table>
+                <th class="visually-hidden">
+                    <td>Удалить из корзины</td>
+                    <td>Изображение мороженого</td>
+                    <td>Наименование мороженого</td>
+                    <td>Вес и цена</td>
+                    <td>Стоимость</td>
+                </th>
+                <tr>
+                    <td><button type="button" class="card_remove_button">Удалить</button></td>
+                    <td><img class="card_image" src="img/icecream-1.png" 
+                            alt="Изображение пломбира с апельсиновым джемом"></td>
+                    <td class="card_name">Пломбир с апельсиновым джемом</td>
+                    <td class="card_weight">1,5 кг х <span class="card_price">200 руб.</span></td>
+                    <td class="card_cost">300 руб.</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="card_remove_button">Удалить</button></td>
+                    <td><img class="card_image" src="img/icecream-3.png" 
+                            alt="Изображение клубничного пломбира с присыпкой из белого шоколада"></td>
+                    <td class="card_name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="card_weight">1,5 кг х <span class="card_price">300 руб.</span></td>
+                    <td class="card_cost">450 руб.</td>
+                </tr>
+                <tr>
+                    <td class="card_total" colspan="5">Итого: 750 руб.</td>
+                </tr>
+            </table>
+            <!-- TODO: form with submit or js button? -->
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </section>
+    
 </body>
 
 </html>
