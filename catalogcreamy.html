@@ -64,15 +64,18 @@
                     </select>
                 </fieldset>
                 <fieldset>
-                    <!-- TODO: think about it -->
                     <legend>Цена:</legend>
                     <div class="filter-price-range">
                         <p>
-                            <input type="number" class="price-range-min" name="filter_price_min" value="100" readonly> руб. - 
-                            <input type="number" class="price-range-max" name="filter_price_max" value="500" readonly> руб.
+                            <input type="number" class="price-range-min" name="filter_price_min" 
+                                value="100" readonly tabindex="-1"> руб. - 
+                            <input type="number" class="price-range-max" name="filter_price_max" 
+                                value="500" readonly tabindex="-1"> руб.
                         </p>
-                        <button type="button" class="range-button range-button-bottom">Уменьшить цену</button>
-                        <button type="button" class="range-button range-button-top">Увеличить цену</button>
+                        <p>
+                            <button type="button" class="range-button">Уменьшить цену</button>
+                            <button type="button" class="range-button">Увеличить цену</button>
+                        </p>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -212,6 +215,7 @@
                     <button class="button visually-hidden" type="button">Быстрый просмотр</button>
                 </li>
             </ul>
+            <!-- TODO: add pagination -->
         </section>
     </main>
     <footer class="main-footer">
