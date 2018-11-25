@@ -56,7 +56,7 @@
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Сортировка:</legend>
-                    <select class="filter-sort" name="filter_sort" id="filter_sort">
+                    <select class="filter-sort" name="filter_sort">
                         <option value="popularity" selected>по популярности</option>
                         <option value="cheap_first">сначала недорогие</option>
                         <option value="expensive_first">сначала дорогие</option>
@@ -66,13 +66,13 @@
                 <fieldset>
                     <legend>Цена:</legend>
                     <div class="filter-price-range">
-                        <p>
-                            <input type="number" class="price-range-min" name="filter_price_min" 
+                        <p class="filter_price_values">
+                            <input type="number" class="filter_price_min" name="filter_price_min" 
                                 value="100" readonly tabindex="-1"> руб. - 
-                            <input type="number" class="price-range-max" name="filter_price_max" 
+                            <input type="number" class="filter_price_min" name="filter_price_max" 
                                 value="500" readonly tabindex="-1"> руб.
                         </p>
-                        <p>
+                        <p class="filter_price_controls">
                             <button type="button" class="range-button">Уменьшить цену</button>
                             <button type="button" class="range-button">Увеличить цену</button>
                         </p>
@@ -80,51 +80,51 @@
                 </fieldset>
                 <fieldset>
                     <legend>Жирность:</legend>
-                    <ul>
-                        <li class="filter-option">
+                    <ul class="filter-fat-list">
+                        <li class="filter-fat-option">
                             <input type="radio" name="filter_fat" value="fat_0" id="filter_fat_0">
                             <label for="filter_fat_0">0%</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-fat-option">
                             <input type="radio" name="filter_fat" value="fat_10" id="filter_fat_10" checked>
                             <label for="filter_fat_10">до 10%</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-fat-option">
                             <input type="radio" name="filter_fat" value="fat_30" id="filter_fat_30">
                             <label for="filter_fat_30">до 30%</label>
                         </li>
-                        <li class="filter-option">
-                            <input type="radio" name="filter_fat" value="fat_30_more" id="filter_fat_30_more">
-                            <label for="filter_fat_30_more">выше 30%</label>
+                        <li class="filter-fat-option">
+                            <input type="radio" name="filter_fat" value="fat_30_up" id="filter_fat_30_up">
+                            <label for="filter_fat_30_up">выше 30%</label>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Наполнители:</legend>
-                    <ul>
-                        <li class="filter-option">
+                    <ul class="filter-filler-list">
+                        <li class="filter-filler-option">
                             <input type="checkbox" name="filter_chocolate" id="filter_chocolate" checked>
                             <label for="filter_chocolate">шоколадные</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-filler-option">
                             <input type="checkbox" name="filter_sugar" id="filter_sugar" checked>
                             <label for="filter_sugar">сахарные присыпки</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-filler-option">
                             <input type="checkbox" name="filter_fruit" id="filter_fruit">
                             <label for="filter_fruit">фрукты</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-filler-option">
                             <input type="checkbox" name="filter_syrops" id="filter_syrops">
                             <label for="filter_syrops">сиропы</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-filler-option">
                             <input type="checkbox" name="filter_jams" id="filter_jams">
                             <label for="filter_jams">джемы</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="filter_button">Применить</button>
+                <button type="submit" class="button filter_button">Применить</button>
             </form>
         </section>
         <section class="icecreams">
@@ -249,7 +249,7 @@
 
     <section class="checkout-form">
         <h2 class="visually-hidden">Состав корзины покупателя</h2>
-        <table>
+        <table class="card_list">
             <th class="visually-hidden">
                 <td>Удалить из корзины</td>
                 <td>Изображение мороженого</td>
@@ -257,7 +257,7 @@
                 <td>Вес и цена</td>
                 <td>Стоимость</td>
             </th>
-            <tr>
+            <tr class="card_item">
                 <td><button type="button" class="card_remove_button">Удалить</button></td>
                 <td><img class="card_image" src="img/icecream-1.png" 
                         alt="Изображение пломбира с апельсиновым джемом"></td>
@@ -265,7 +265,7 @@
                 <td class="card_weight">1,5 кг х <span class="card_price">200 руб.</span></td>
                 <td class="card_cost">300 руб.</td>
             </tr>
-            <tr>
+            <tr class="card_item">
                 <td><button type="button" class="card_remove_button">Удалить</button></td>
                 <td><img class="card_image" src="img/icecream-3.png" 
                         alt="Изображение клубничного пломбира с присыпкой из белого шоколада"></td>
@@ -273,13 +273,11 @@
                 <td class="card_weight">1,5 кг х <span class="card_price">300 руб.</span></td>
                 <td class="card_cost">450 руб.</td>
             </tr>
-            <tr>
-                <td class="card_total" colspan="5">Итого: 750 руб.</td>
+            <tr class="card_total">
+                <td colspan="5">Итого: 750 руб.</td>
             </tr>
         </table>
         <button type="button">Оформить заказ</button>
     </section>
-    
 </body>
-
 </html>
