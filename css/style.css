@@ -75,6 +75,16 @@ a {
     border-radius: 32px;
 }
 
+/* TODO: refactor */
+.site-navigation .selected > a {
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #d07058;
+
+    border-radius: 32px;
+}
+
 /* TODO: inheritence problem? */
 .catalog-sub-navigation a:hover,
 .catalog-sub-navigation a:focus {
