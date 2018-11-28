@@ -353,3 +353,32 @@ a:focus .underscore_text {
     font-weight: normal;
     color: #323232;
 }
+
+.footer-social,
+.footer-navigation {
+    list-style: none;
+}
+
+.footer-link {
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: normal;
+
+    text-decoration: underline;
+}
+
+.footer-link:nth-child(1) {
+    font-weight: bold;
+}
+
+.footer-link:hover,
+.footer-link:focus {  
+    outline: none;
+    color: #ffbc9e;
+}
+
+.footer-copyright {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: normal;
+}
