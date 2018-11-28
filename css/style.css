@@ -317,3 +317,39 @@ a:focus .underscore_text {
     outline: none;
     border: 2px inset rgba(46, 136, 228, 0.52);
 }
+
+.contacts-feedback {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #323232;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+}
+
+.contacts-feedback h2 {
+    font: inherit;
+}
+
+.contacts-feedback .feedback-address {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.contacts-feedback .feedback-phone {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.contacts-feedback .feedback-time {
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #323232;
+}
