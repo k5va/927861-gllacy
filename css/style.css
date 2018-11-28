@@ -215,6 +215,8 @@ a:focus .underscore_text {
 .about-gllacy {
     color: #323232;
 
+    border-radius: 15px;
+
     background-color: #ede1c5;
     background-position: top left;
     background-repeat: repeat;
@@ -240,6 +242,8 @@ a:focus .underscore_text {
 .new-blog-record {
     color: #323232;
 
+    border-radius: 15px;
+
     background-color: #ffffff;
     background-position: top left;
     background-repeat: no-repeat;
@@ -259,5 +263,57 @@ a:focus .underscore_text {
     
     color: #323232;
     text-decoration: underline;
+}
 
+.subscribe {
+    color: #5a5a5a;
+
+    border-radius: 15px;
+
+    background-color: #f8f7f4;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url("../img/svg/bg-post.svg");
+}
+
+.subscribe .wrapper {
+    color: #5a5a5a;
+
+    border-radius: 15px;
+
+    background-color: #f8f7f4;
+}
+
+.subscribe p {
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: #5a5a5a;
+}
+
+.subscribe input {
+    font: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px inset rgba(178, 178, 178, 0.52);
+}
+
+.subscribe input::placeholder {
+    font-weight: normal;
+    color: #999999;
+}
+
+.subscribe input:hover {
+    border: 2px inset rgba(154, 154, 154, 0.52);
+}
+
+.subscribe input:focus {
+    outline: none;
+    border: 2px inset rgba(46, 136, 228, 0.52);
 }
