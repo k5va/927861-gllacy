@@ -401,3 +401,23 @@ input:focus {
     font-weight: normal;
     color: #323232;
 }
+
+.search-form {
+    color: #323232;
+    background-color: #f8f7f4;
+
+    border-radius: 5px;   
+}
+
+.modal-feedback {
+    color: #323232;
+    background-color: #f8f7f4;
+
+    border-radius: 5px;   
+}
+
+.modal-feedback b {
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 500;
+}
