@@ -510,6 +510,42 @@ a:focus .underscore_text {
     box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
+/* ------------------------------Pagination styling------------------------------------- */
+
+.pagination {
+    list-style: none;
+}
+
+.pagination-item button {
+
+    width: 27px;
+    height: 26px;
+
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: transparent;
+    
+    border: none;
+    border-radius: 50px;  
+}
+
+.pagination-item button:hover,
+.pagination-item button:focus {
+    outline: none;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item.selected button {
+    color: #323232;
+
+    background-color: #ffffff;
+}
+
 /* ------------------------------Footer styling------------------------------------- */
 
 .footer-social,
