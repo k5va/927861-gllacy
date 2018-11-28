@@ -237,3 +237,27 @@ a:focus .underscore_text {
     font-weight: normal;
 }
 
+.new-blog-record {
+    color: #323232;
+
+    background-color: #ffffff;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url("../img/blog-icecream.jpg");
+}
+
+.new-blog-record h2 {
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog-record-link {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    
+    color: #323232;
+    text-decoration: underline;
+
+}
