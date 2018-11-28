@@ -23,14 +23,11 @@ a {
 
 /* ------------------------------Buttons styling------------------------------------- */
 .button {
-    /* TODO: Size added for testing */
-    height: 65px;
-    width: 280px;
-
-    font: inherit;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
     color: #ffffff;
-    font-weight: bold;
 
     background-image: linear-gradient(to top, #e74a35, #f26843);
     
@@ -40,7 +37,10 @@ a {
 }
 
 /* FIXME: background color doesn't fit design */
-.button:hover {
+.button:hover,
+.button:focus {
+    outline: none;
+
     box-shadow: 0px 2px 2px 0 #ac1000;
     background-image: 
         linear-gradient(to top, #e74a35, #f26843), 
@@ -602,4 +602,23 @@ a:focus .underscore_text {
     line-height: 28px;
     font-size: 24px;
     font-weight: 500;
+}
+
+/* ------------------------------Checkout form styling------------------------------------- */
+
+.checkout-form {
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #323232;
+
+    background-color: #f8f7f4;
+
+    border-radius: 5px;   
+}
+
+.card_total {
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: bold;
 }
