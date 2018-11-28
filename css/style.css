@@ -292,7 +292,7 @@ a:focus .underscore_text {
     color: #5a5a5a;
 }
 
-.subscribe input {
+input {
     font: inherit;
     line-height: 24px;
     font-size: 16px;
@@ -304,16 +304,16 @@ a:focus .underscore_text {
     border: 1px inset rgba(178, 178, 178, 0.52);
 }
 
-.subscribe input::placeholder {
+input::placeholder {
     font-weight: normal;
     color: #999999;
 }
 
-.subscribe input:hover {
+input:hover {
     border: 2px inset rgba(154, 154, 154, 0.52);
 }
 
-.subscribe input:focus {
+input:focus {
     outline: none;
     border: 2px inset rgba(46, 136, 228, 0.52);
 }
@@ -359,7 +359,7 @@ a:focus .underscore_text {
     list-style: none;
 }
 
-.footer-link {
+.link {
     line-height: 16px;
     font-size: 13px;
     font-weight: normal;
@@ -367,18 +367,37 @@ a:focus .underscore_text {
     text-decoration: underline;
 }
 
-.footer-link:nth-child(1) {
-    font-weight: bold;
-}
-
-.footer-link:hover,
-.footer-link:focus {  
+.link:hover,
+.link:focus {  
     outline: none;
     color: #ffbc9e;
+}
+
+/* TODO: Refactor to 2 selectors */
+.footer-navigation li:nth-child(1) .footer-link {
+    font-weight: bold;
 }
 
 .footer-copyright {
     line-height: 16px;
     font-size: 12px;
     font-weight: normal;
+}
+
+.login-form {
+    color: #323232;
+    background-color: #f8f7f4;
+
+    border-radius: 5px;
+}
+
+.login-form-navigation {
+    list-style: none;
+}
+
+.login-form-link {
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #323232;
 }
