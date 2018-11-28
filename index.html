@@ -184,7 +184,8 @@
                 </p>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <label for="subscribe_email" class="visually-hidden">Электронная почта:</label>
-                    <input type="email" name="subscribe_email" id="subscribe_email" placeholder="Электронная почта" required>
+                    <input class="input-field" type="email" name="subscribe_email" 
+                        id="subscribe_email" placeholder="Электронная почта" required>
                     <button type="submit" class="button">Отправить</button>
                 </form>
             </div>
@@ -230,11 +231,13 @@
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="login_email" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="login_email" id="login_email" placeholder="Электронная почта" required>
+                <input class="input-field"  type="email" name="login_email" 
+                    id="login_email" placeholder="Электронная почта" required>
             </p>
             <p>
                 <label for="login_password" class="visually-hidden">Пароль</label>
-                <input type="password" name="login_password" id="login_password" placeholder="Пароль" required>
+                <input class="input-field" type="password" name="login_password" 
+                    id="login_password" placeholder="Пароль" required>
             </p>
             <button type="submit" class="button">Войти</button>
             <ul class="login-form-navigation">
@@ -248,7 +251,8 @@
         <h2 class="visually-hidden">Форма поиска по сайту</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search_text" class="visually-hidden">Строка поиска</label>
-            <input type="text" name="search_text" id="search_text" placeholder="Что ищем?" required>
+            <input class="input-field"  type="text" name="search_text" 
+                id="search_text" placeholder="Что ищем?" required>
         </form>
     </section>
 
@@ -258,16 +262,17 @@
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="feedback_name" class="visually-hidden">Ваше имя</label>
-                <input type="text" name="feedback_name" id="feedback_name" placeholder="Как вас зовут?" required>
+                <input class="input-field" type="text" name="feedback_name" 
+                    id="feedback_name" placeholder="Как вас зовут?" required>
             </p>
             <p>
                 <label for="feedback_email" class="visually-hidden">Ваша электронная почта</label>
-                <input type="email" name="feedback_email" id="feedback_email" 
-                    placeholder="Ваша почта для ответа?" required>
+                <input  class="input-field" type="email" name="feedback_email" 
+                    id="feedback_email" placeholder="Ваша почта для ответа?" required>
             </p>
             <p>
                 <label for="feedback_message" class="visually-hidden">Ваше сообщение</label>
-                <textarea name="feedback_message" id="feedback_message" 
+                <textarea class="input-field" name="feedback_message" id="feedback_message" 
                     placeholder="Напишите что-нибудь..." required></textarea>
             </p>
             <button type="submit" class="button">Отправить</button>

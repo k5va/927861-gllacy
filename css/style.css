@@ -70,7 +70,7 @@ a {
 }
 
 /* ------------------------------Form inputs styling------------------------------------- */
-input {
+.input-field {
     font: inherit;
     line-height: 24px;
     font-size: 16px;
@@ -82,16 +82,16 @@ input {
     border: 1px inset rgba(178, 178, 178, 0.52);
 }
 
-input::placeholder {
+.input-field::placeholder {
     font-weight: normal;
     color: #999999;
 }
 
-input:hover {
+.input-field:hover {
     border: 2px inset rgba(154, 154, 154, 0.52);
 }
 
-input:focus {
+.input-field:focus {
     outline: none;
     border: 2px inset rgba(46, 136, 228, 0.52);
 }
@@ -403,6 +403,111 @@ a:focus .underscore_text {
     font-size: 14px;
     font-weight: normal;
     color: #323232;
+}
+
+/* ------------------------------Breadcrumbs styling------------------------------------- */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs-link {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* ------------------------------Header styling for catalog page------------------------------------- */
+.catalog-container h1 {
+    line-height: 41px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* ------------------------------Icecream filter styling------------------------------------- */
+.icecream-filter {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icecream-filter fieldset {
+    border: none;
+}
+
+/* TODO: How to style dropdown list? */
+.filter-sort {
+    color: inherit;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border-radius: 32px;
+}
+
+.filter-sort:hover {
+    color: #323232;
+}
+
+.filter_price_values input {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.filter-fat-list {
+    list-style: none;
+}
+
+.filter-fat-option {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-filler-list {
+    list-style: none;
+}
+
+.filter-filler-option {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-button {
+    /* TODO: Size added for testing */
+    height: 37px;
+    width: 144px;
+
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    border: 2px solid #ffffff;
+    border-radius: 37px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    outline: none;
+
+    color: #323232;
+
+    background-color: #ffffff;
+}
+
+.filter-button:active {
+    color: #323232;
+    
+    border: none;
+    box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 /* ------------------------------Footer styling------------------------------------- */
