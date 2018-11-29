@@ -115,31 +115,15 @@ a:focus .underscore_text {
 /* ------------------------------Header styling------------------------------------- */
 
 .site-navigation {
+    list-style: none;
+    
     line-height: 18px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.catalog-sub-navigation {
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: normal;
-    color: #323232;
-
-    background-color: #f8f7f4;
-}
-
-.catalog-sub-navigation a {
-    color: inherit;
-}
-
-.site-navigation,
-.catalog-sub-navigation {
-    list-style: none;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-link:hover,
+.site-link:focus {
     font-weight: bold;
     color: #323232;
 
@@ -148,8 +132,7 @@ a:focus .underscore_text {
     border-radius: 32px;
 }
 
-/* TODO: refactor */
-.site-navigation .selected > a {
+.site-link.selected {
     font-weight: bold;
     color: #ffffff;
 
@@ -158,16 +141,26 @@ a:focus .underscore_text {
     border-radius: 32px;
 }
 
-/* TODO: inheritence problem? */
-.catalog-sub-navigation a:hover,
-.catalog-sub-navigation a:focus {
+.sub-navigation {
+    list-style: none;
+    
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #323232;
+
+    background-color: #f8f7f4;
+}
+
+.sub-link:hover,
+.sub-link:focus {
     color:  #323232;
 
     background-color: #fbded7;
     border-radius: 0px;
 }
 
-.catalog-sub-navigation a:active {
+.sub-link a:active {
     color:  #323232;
 
     background-color: #f6b5a5;
