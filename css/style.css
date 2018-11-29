@@ -550,10 +550,12 @@ a:focus .underscore_text {
     font-weight: normal;
 }
 
-/* ------------------------------Forms styling------------------------------------- */
+/* ------------------------------Popup forms styling------------------------------------- */
 
 /* ------------------------------Login form styling------------------------------------- */
 .login-form {
+    display: none;
+
     color: #323232;
     background-color: #f8f7f4;
 
@@ -572,6 +574,8 @@ a:focus .underscore_text {
 
 /* ------------------------------Search form styling------------------------------------- */
 .search-form {
+    display: none;
+
     color: #323232;
     background-color: #f8f7f4;
 
@@ -581,6 +585,8 @@ a:focus .underscore_text {
 /* ------------------------------Modal feedback form styling------------------------------------- */
 
 .modal-feedback {
+    display: none;
+
     color: #323232;
     background-color: #f8f7f4;
 
@@ -596,6 +602,8 @@ a:focus .underscore_text {
 /* ------------------------------Checkout form styling------------------------------------- */
 
 .checkout-form {
+    display: none;
+
     line-height: 16px;
     font-size: 13px;
     font-weight: normal;
