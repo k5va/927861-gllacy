@@ -101,16 +101,23 @@ a {
     border: 2px inset rgba(46, 136, 228, 0.52);
 }
 
+/* ------------------------------Underscore styling------------------------------------- */
+
+.underscore_text {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+a:hover .underscore_text,
+a:focus .underscore_text {
+    border-bottom: none;
+}
+
 /* ------------------------------Header styling------------------------------------- */
 
 .site-navigation {
     line-height: 18px;
     font-size: 16px;
     font-weight: bold;
-}
-
-.underscore_text {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .catalog-sub-navigation {
@@ -164,11 +171,6 @@ a {
     color:  #323232;
 
     background-color: #f6b5a5;
-}
-
-a:hover .underscore_text,
-a:focus .underscore_text {
-    border-bottom: none;
 }
 
 .user-navigation a {
