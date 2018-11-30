@@ -51,9 +51,6 @@ a {
 
     padding: 0 27px;
     margin: 0 auto;
-
-    /* TODO: temporary */
-    background-color: rgba(172, 16, 0, 0.1);
 }
 
 /* ------------------------------Buttons styling------------------------------------- */
@@ -516,6 +513,9 @@ a:focus .underscore_text {
 /* ------------------------------Contacts styling------------------------------------- */
 
 .contacts {
+
+    margin-bottom: 18px;
+
     position: relative;
 }
 
@@ -705,9 +705,36 @@ a:focus .underscore_text {
 
 /* ------------------------------Footer styling------------------------------------- */
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 29px;
+}
+
 .footer-social,
 .footer-navigation {
     list-style: none;
+
+    margin: 0;
+    padding: 18px 0 0;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social li {
+    margin-right: 10px;
+}
+
+.footer-navigation {
+
+    width: 304px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 /* TODO: Refactor to 2 selectors */
@@ -715,10 +742,17 @@ a:focus .underscore_text {
     font-weight: bold;
 }
 
+.footer-navigation li:nth-child(odd) {
+    width: 111px;
+    margin-right: 31px;
+}
+
 .footer-copyright {
     line-height: 16px;
     font-size: 12px;
     font-weight: normal;
+
+    margin: 0;
 }
 
 /* ------------------------------Popup forms styling------------------------------------- */
