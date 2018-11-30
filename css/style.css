@@ -146,6 +146,7 @@ a:focus .underscore_text {
 
 .main-header {
     padding-top: 9px;
+    padding-bottom: 284px;
 
     display: flex;
     flex-direction: column;
@@ -296,13 +297,37 @@ a:focus .underscore_text {
     padding: 0;
 }
 
+.main-banner-item {
+    text-align: center;
+
+    /* position: relative; */
+}
+
+.main-banner-image {
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: 155px;
+}
+
 .main-banner-info {
     line-height: 60.5px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
 
-    padding: 0;
+    margin: 0 auto 29px;
+
+    width: 670px;
+}
+
+.main-banner-item .button {
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: bold;
+
+    padding: 17px 31px 16px 41px;
 }
 
 
@@ -427,6 +452,8 @@ a:focus .underscore_text {
     line-height: 22px;
     font-size: 16px;
     font-weight: normal;
+
+    position: relative;
 }
 
 .feature-item p {
@@ -451,6 +478,34 @@ a:focus .underscore_text {
     margin-bottom: 30px;
 }
 
+.feature-item::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: -56px;
+    top: -16px;
+
+    width: 49px;
+    height: 49px;
+}
+
+.feature-production::after {
+    background-image: url("../img/svg/ice-cream.svg");
+}
+
+.feature-suppliers::after {
+    background-image: url("../img/svg/cow.svg");
+}
+
+.feature-ingredients::after {
+    background-image: url("../img/svg/eco.svg");
+}
+
+.feature-delivery::after {
+    background-image: url("../img/svg/thermometer.svg");
+}
+
 /* ------------------------------New blog record styling------------------------------------- */
 
 .new-blog-subscribe-wrapper {
@@ -468,6 +523,8 @@ a:focus .underscore_text {
     background-repeat: no-repeat;
     background-image: url("../img/blog-icecream.jpg");
 
+    padding: 26px 19px 83px;
+
     width: 560px;
 }
 
@@ -475,12 +532,18 @@ a:focus .underscore_text {
     line-height: 22px;
     font-size: 16px;
     font-weight: 500;
+
+    margin: 0 0 13px;
 }
 
 .blog-record-link {
     line-height: 30px;
     font-size: 24px;
     font-weight: bold;
+
+    display: inline-block;
+
+    width: 281px;
 }
 
 /* ------------------------------Subscribe styling------------------------------------- */
