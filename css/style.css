@@ -14,6 +14,7 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
+
 }
 
 a {
@@ -23,10 +24,6 @@ a {
 
 /* ------------------------------Buttons styling------------------------------------- */
 .button {
-    /*TODO: size added for testing*/
-    width: 165px;
-    height: 46px;
-
     line-height: 24px;
     font-size: 18px;
     font-weight: bold;
@@ -38,6 +35,10 @@ a {
     border: none;
     border-radius: 64px;
     box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+
+    /*TODO: size added for testing*/
+    width: 165px;
+    height: 46px;
 }
 
 .button:hover,
@@ -116,12 +117,42 @@ a:focus .underscore_text {
 
 /* ------------------------------Header styling------------------------------------- */
 
+.main-header {
+    width: 1146px;
+
+    padding: 9px 27px 0 27px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(172, 16, 0, 0.1);
+}
+
+.main-header-logo {
+    margin-right: 24px;
+}
+
+.main-navigation {
+    display: flex;
+
+    margin-bottom: 2px;
+}
+
 .site-navigation {
     list-style: none;
     
     line-height: 18px;
     font-size: 16px;
     font-weight: bold;
+    
+    display: flex;
+    margin: 0;
+    padding: 23px 0 0 0;
+}
+
+.site-navigation li {
+    margin-right: 28px;
 }
 
 .site-link:hover,
@@ -144,6 +175,9 @@ a:focus .underscore_text {
 }
 
 .sub-navigation {
+    /* TODO: Temporary */
+    display: none;
+    
     list-style: none;
     
     line-height: 16px;
@@ -168,6 +202,12 @@ a:focus .underscore_text {
     background-color: #f6b5a5;
 }
 
+.user-navigation {
+
+    padding-top: 14px;
+    margin-left: auto;
+}
+
 .user-navigation a {
     line-height: 16px;
     font-size: 14px;
@@ -178,6 +218,12 @@ a:focus .underscore_text {
     background-color: rgba(255, 255, 255, 0.2);
 
     border-radius: 32px;
+
+    margin-right: 10px;
+}
+
+.user-navigation .cart-link {
+    margin-right: 0;
 }
 
 .user-navigation a:hover {
@@ -191,13 +237,19 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 }
 
-.main-header-contact-info .open-time {
+.contact-info-wrapper {
+    align-self: flex-end;
+}
+
+.contact-info-wrapper .open-time {
     line-height: 16px;
     font-size: 14px;
     font-weight: bold;
+
+    margin: 0 0 8px 0;
 }
 
-.main-header-contact-info .phone {
+.contact-info-wrapper .phone {
     line-height: 24px;
     font-size: 22px;
     font-weight: bold;
