@@ -7,6 +7,27 @@
 
 /* ------------------------------Basic elements styling------------------------------------- */
 
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
+/* .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+} */
+
 body {
     margin: 0;
 
@@ -14,7 +35,6 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
-
 }
 
 a {
@@ -118,7 +138,7 @@ a:focus .underscore_text {
 /* ------------------------------Header styling------------------------------------- */
 
 .main-header {
-    width: 1146px;
+    width: 1200px;
 
     padding: 9px 27px 0 27px;
     margin: 0 auto;
