@@ -398,6 +398,10 @@ a:focus .underscore_text {
     margin-bottom: 40px;
 }
 
+.catalog-main .icecream-list {
+    margin-bottom: 83px;
+}
+
 .icecream-list {
     list-style: none;
 
@@ -866,6 +870,11 @@ a:focus .underscore_text {
 
 .pagination {
     list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pagination-item button {
