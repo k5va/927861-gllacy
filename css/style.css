@@ -324,6 +324,11 @@ a:focus .underscore_text {
     margin-bottom: 39px;
 }
 
+.catalog-main {
+    display: flex;
+    flex-direction: column;
+}
+
 /* ------------------------------Main banner styling------------------------------------- */
 
 .main-banner {
