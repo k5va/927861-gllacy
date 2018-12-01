@@ -12,6 +12,7 @@
 *::after {
     box-sizing: inherit;
 }
+
 html {
     box-sizing: border-box;
 }
@@ -341,11 +342,15 @@ a:focus .underscore_text {
 }
 
 .special-offer {
+    text-align: right;
+
     background-color: #000000;
     background-position: top left;
     background-repeat: no-repeat;
 
     border-radius: 15px;
+
+    padding: 23px 21px 0 20px;
 
     width: 560px;
 }
@@ -363,14 +368,24 @@ a:focus .underscore_text {
     line-height: 41px;
     font-size: 35px;
     font-weight: bold;
+    text-align: left;
 
-    margin: 0;
+    margin: 0 0 20px;
 }
 
 .special-offer-description {
     line-height: 22px;
     font-size: 18px;
     font-weight: bold;
+    text-align: left;
+
+    margin: 0 0 45px;
+
+    width: 510px;
+}
+
+.special-offer .button {
+    padding: 10px 19px;
 }
 
 /* ------------------------------Icecreams list styling------------------------------------- */
@@ -386,12 +401,66 @@ a:focus .underscore_text {
     margin: 0;
 
     display: flex;
+    justify-content: space-between;
+}
+
+.icecream-item {
+    text-align: center;
+    
+    width: 267px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.icecream-item::before {
+    content: "";
+
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    z-index: -1;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+    width: 293px;
+    height: 405px; 
+
+    display: none;
+}
+
+.icecream-item::after {
+    content: "";
+
+    background-image: url("../img/svg/hit.svg");
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 61px;
+    height: 61px;
+}
+
+.icecream-item img {
+    margin-bottom: 17px;
+    z-index: inherit;
 }
 
 .icecream-price {
     line-height: 45px;
     font-size: 45px;
     font-weight: bold;
+
+    margin: 0;
+
+    position: absolute;
+    left: 0;
+    top: 214px;
 }
 
 .icecream-price span {
@@ -402,15 +471,27 @@ a:focus .underscore_text {
     line-height: 22px;
     font-size: 16px;
     font-weight: 500;
+
+    margin: 0;
 }
 
-.icecream-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.icecream-item .button {
+    display: none; 
 
-    border-radius: 5px;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px 19px;
+
+    position: absolute;
+    left: 33px;
+    top: 339px;
 }
 
+.icecream-item:hover .button {
+    display: block;
+}
+
+.icecream-item:hover::before {
+    display: block;
+}
 
 /* ------------------------------About Gllacy styling------------------------------------- */
 
@@ -558,19 +639,39 @@ a:focus .underscore_text {
     background-repeat: no-repeat;
     background-image: url("../img/svg/bg-post.svg");
 
+    padding: 5px;
+
     width: 560px;
 }
 
-.subscribe .wrapper {
+/* TODO: move wrapper outside? */
+.subscribe-wrapper {
     border-radius: 15px;
 
     background-color: #f8f7f4;
+
+    padding: 33px 20px 35px 21px;
 }
 
 .subscribe p {
     line-height: 22px;
     font-size: 16px;
     font-weight: normal;
+
+    margin: 0 0 38px;
+
+    width: 506px;
+}
+
+.subscribe .input-field {
+    padding: 10px 0 10px 15px;
+    margin-right: 11px;
+
+    width: 368px;
+}
+
+.subscribe .button {
+    padding: 10px 19px;
 }
 
 /* ------------------------------Contacts styling------------------------------------- */
