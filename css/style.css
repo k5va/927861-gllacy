@@ -50,6 +50,9 @@ a {
 .container {
     width: 1200px;
 
+    /* TODO: temporary */
+    background-color: rgba(46, 136, 228, 0.2);
+
     padding: 0 27px;
     margin: 0 auto;
 }
@@ -732,6 +735,15 @@ a:focus .underscore_text {
 
 .breadcrumbs {
     list-style: none;
+
+    padding: 0;
+    margin: -20px 0 5px;
+
+    display: flex;
+}
+
+.breadcrumbs li {
+    margin-right: 21px;
 }
 
 .breadcrumbs-link {
@@ -745,6 +757,8 @@ a:focus .underscore_text {
     line-height: 41px;
     font-size: 35px;
     font-weight: bold;
+
+    margin: 0;
 }
 
 /* ------------------------------Icecream filter styling------------------------------------- */
