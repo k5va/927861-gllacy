@@ -746,6 +746,7 @@ a:focus .underscore_text {
 
     border-radius: 15px;
 
+    padding: 25px 0 30px 25px;
     width: 302px;
 
     position: absolute;
@@ -755,12 +756,18 @@ a:focus .underscore_text {
 
 .contacts-feedback h2 {
     font: inherit;
+
+    margin: 0 0 3px;
+    width: 148px;
 }
 
 .contacts-feedback .feedback-address {
     line-height: 24px;
     font-size: 18px;
     font-weight: bold;
+
+    margin: 0;
+    width: 225px;
 }
 
 .contacts-feedback .feedback-phone {
@@ -773,6 +780,15 @@ a:focus .underscore_text {
     line-height: 22px;
     font-size: 14px;
     font-weight: normal;
+
+    margin: 0 0 20px;
+}
+
+.contacts-feedback .button {
+    
+    display: inline-block;
+
+    padding: 8px 28px;
 }
 
 /* ------------------------------Breadcrumbs styling------------------------------------- */
