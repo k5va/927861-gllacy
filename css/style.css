@@ -402,6 +402,7 @@ a:focus .underscore_text {
     margin: 0;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
