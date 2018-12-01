@@ -171,7 +171,7 @@ a:focus .underscore_text {
     
     display: flex;
     margin: 0;
-    padding: 23px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .site-navigation li {
@@ -257,7 +257,7 @@ a:focus .underscore_text {
 
 .user-navigation {
 
-    padding-top: 14px;
+    padding-top: 17px;
     margin-left: auto;
 }
 
@@ -272,7 +272,13 @@ a:focus .underscore_text {
 
     border-radius: 32px;
 
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.user-navigation .login-link,
+.user-navigation .cart-link {
+
+    padding: 5px 17px 10px 44px;
 }
 
 .user-navigation .cart-link {
@@ -298,6 +304,7 @@ a:focus .underscore_text {
     line-height: 16px;
     font-size: 14px;
     font-weight: bold;
+    text-align: right;
 
     margin: 0 0 8px 0;
 }
@@ -320,7 +327,7 @@ a:focus .underscore_text {
 /* ------------------------------Main banner styling------------------------------------- */
 
 .main-banner {
-    padding-top: 284px;
+    padding-top: 265px;
     margin-bottom: 40px;
 }
 
@@ -340,7 +347,7 @@ a:focus .underscore_text {
     z-index: -1;
 
     top: 0;
-    left: 155px;
+    left: 110px;
 }
 
 .main-banner-info {
@@ -359,7 +366,7 @@ a:focus .underscore_text {
     font-size: 32px;
     font-weight: bold;
 
-    padding: 17px 31px 16px 41px;
+    padding: 10px 40px 12px 40px;
 }
 
 
@@ -486,8 +493,7 @@ a:focus .underscore_text {
 }
 
 .icecream-item img {
-    margin-bottom: 17px;
-    z-index: inherit;
+    margin-bottom: 9px;
 }
 
 .icecream-price {
@@ -499,7 +505,7 @@ a:focus .underscore_text {
 
     position: absolute;
     left: 0;
-    top: 214px;
+    top: 210px;
 }
 
 .icecream-price span {
@@ -548,7 +554,7 @@ a:focus .underscore_text {
     background-repeat: repeat;
     background-image: url("../img/about-gllacy-grid.jpg");
 
-    padding: 29px 20px 26px;
+    padding: 23px 20px 26px;
     margin-bottom: 40px;
 }
 
@@ -557,8 +563,8 @@ a:focus .underscore_text {
     font-size: 24px;
     font-weight: 500;
 
-    margin: 0;
-    padding: 0 0 27px;
+    padding: 0;
+    margin: 0 0 21px;
 }
 
 
@@ -599,7 +605,7 @@ a:focus .underscore_text {
 
 .feature-production,
 .feature-suppliers {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .feature-item::after {
@@ -608,7 +614,7 @@ a:focus .underscore_text {
     display: block;
     position: absolute;
     left: -56px;
-    top: -16px;
+    top: -13px;
 
     width: 49px;
     height: 49px;
