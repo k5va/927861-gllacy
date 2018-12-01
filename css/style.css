@@ -147,7 +147,6 @@ a:focus .underscore_text {
 
 .main-header {
     padding-top: 9px;
-    /* padding-bottom: 284px; */
 
     display: flex;
     flex-direction: column;
@@ -301,8 +300,6 @@ a:focus .underscore_text {
 
 .main-banner-item {
     text-align: center;
-
-    /* position: relative; */
 }
 
 .main-banner-image {
@@ -416,7 +413,7 @@ a:focus .underscore_text {
     width: 267px;
 
     position: relative;
-    z-index: 1;
+    
 }
 
 .icecream-item::before {
@@ -489,6 +486,10 @@ a:focus .underscore_text {
     position: absolute;
     left: 33px;
     top: 339px;
+}
+
+.icecream-item:hover {
+    z-index: 1;
 }
 
 .icecream-item:hover .button {
