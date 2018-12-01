@@ -647,7 +647,7 @@ a:focus .underscore_text {
     background-repeat: no-repeat;
     background-image: url("../img/blog-icecream.jpg");
 
-    padding: 26px 19px 83px;
+    padding: 20px 19px 80px;
 
     width: 560px;
 }
@@ -657,7 +657,7 @@ a:focus .underscore_text {
     font-size: 16px;
     font-weight: 500;
 
-    margin: 0 0 13px;
+    margin: 0 0 8px;
 }
 
 .blog-record-link {
@@ -693,7 +693,7 @@ a:focus .underscore_text {
 
     background-color: #f8f7f4;
 
-    padding: 33px 20px 35px 21px;
+    padding: 28px 20px 35px 21px;
 }
 
 .subscribe p {
@@ -707,14 +707,14 @@ a:focus .underscore_text {
 }
 
 .subscribe .input-field {
-    padding: 10px 0 10px 15px;
+    padding: 8px 0 8px 15px;
     margin-right: 11px;
 
     width: 368px;
 }
 
 .subscribe .button {
-    padding: 10px 19px;
+    padding: 8px 19px;
 }
 
 /* ------------------------------Contacts styling------------------------------------- */
