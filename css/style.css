@@ -758,7 +758,7 @@ a:focus .underscore_text {
     font-size: 35px;
     font-weight: bold;
 
-    margin: 0;
+    margin: 0 0 25px;
 }
 
 /* ------------------------------Icecream filter styling------------------------------------- */
@@ -766,9 +766,16 @@ a:focus .underscore_text {
     line-height: 16px;
     font-size: 14px;
     font-weight: 500;
+
+    margin-bottom: 40px;
 }
 
-.icecream-filter fieldset {
+.icecream-filter-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icecream-filter-form fieldset {
     border: none;
 }
 
@@ -796,6 +803,10 @@ a:focus .underscore_text {
 
 .filter-fat-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
 }
 
 .filter-fat-option {
@@ -806,6 +817,10 @@ a:focus .underscore_text {
 
 .filter-filler-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
 }
 
 .filter-filler-option {
