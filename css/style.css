@@ -153,7 +153,7 @@ a:focus .underscore_text {
 }
 
 .main-header-logo {
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .main-navigation {
@@ -175,7 +175,12 @@ a:focus .underscore_text {
 }
 
 .site-navigation li {
-    margin-right: 28px;
+
+    position: relative;
+}
+
+.site-link {
+    padding: 5px 14px;
 }
 
 .site-link:hover,
@@ -187,6 +192,16 @@ a:focus .underscore_text {
 
     border-radius: 32px;
 }
+
+.site-link:focus + .sub-navigation {
+    display: block;
+}
+
+/* TODO: needs refactoring selector depth */
+.site-navigation > li:hover > .sub-navigation {
+    display: block;
+}
+
 
 .site-link.selected {
     font-weight: bold;
@@ -206,18 +221,36 @@ a:focus .underscore_text {
     color: #323232;
 
     background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    display: none;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+
+    position: absolute;
+    left: -7px;
+    top: 27px;
+
+    width: 143px;
+}
+
+.sub-link {
+    display: block;
+
+    padding: 10px 0 10px 21px;
 }
 
 .sub-link:hover,
 .sub-link:focus {
-    color:  #323232;
+    color: #323232;
 
     background-color: #fbded7;
-    border-radius: 0px;
 }
 
-.sub-link a:active {
-    color:  #323232;
+.sub-link:active {
+    color: #323232;
 
     background-color: #f6b5a5;
 }
