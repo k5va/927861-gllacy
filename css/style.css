@@ -187,6 +187,11 @@ a:focus .underscore_text {
     padding: 5px 14px;
 }
 
+/* TODO: Hack on order not to loose dropdown menu */
+.site-navigation > li:hover {
+    padding-bottom: 10px;
+}
+
 .site-navigation li:hover .site-link,
 .site-navigation li:focus .site-link {
     font-weight: bold;
@@ -198,7 +203,8 @@ a:focus .underscore_text {
 }
 
 /* TODO: needs refactoring selector depth */
-.site-navigation > li:hover > .sub-navigation {
+.site-navigation > li:hover > .sub-navigation,
+.site-navigation > li:focus > .sub-navigation {
     display: block;
 }
 
@@ -500,7 +506,7 @@ a:focus .underscore_text {
     top: -10px;
     bottom: -80px; 
     left: -12px;
-    z-index: -1; /* TODO: Why it works? */
+    z-index: -1; 
 
     background-color: rgba(255, 255, 255, 0.2);
 
@@ -508,7 +514,6 @@ a:focus .underscore_text {
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
     width: 293px;
-    /* height: 405px; /* TODO: Not Ok to set fixed height? */
  
     display: none;
 }
@@ -562,7 +567,6 @@ a:focus .underscore_text {
 
     position: absolute;
     left: 33px;
-    /* top: 339px; */
     bottom: -50px;
 }
 
@@ -926,9 +930,6 @@ a:focus .underscore_text {
 }
 
 .filter-button {
-    /* TODO: Size added for testing */
-    height: 37px;
-    width: 144px;
 
     line-height: 18px;
     font-size: 16px;
