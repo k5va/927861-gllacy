@@ -170,8 +170,12 @@ a:focus .underscore_text {
     font-weight: bold;
     
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
     margin: 0;
     padding: 20px 0 0 0;
+    max-width: 700px;
 }
 
 .site-navigation li {
@@ -183,8 +187,8 @@ a:focus .underscore_text {
     padding: 5px 14px;
 }
 
-.site-link:hover,
-.site-link:focus {
+.site-navigation li:hover .site-link,
+.site-navigation li:focus .site-link {
     font-weight: bold;
     color: #323232;
 
@@ -193,9 +197,10 @@ a:focus .underscore_text {
     border-radius: 32px;
 }
 
-.site-link:focus + .sub-navigation {
+/* .site-navigation li:hover .sub-navigation,
+.site-navigation li:focus .sub-navigation {
     display: block;
-}
+} */
 
 /* TODO: needs refactoring selector depth */
 .site-navigation > li:hover > .sub-navigation {
@@ -227,13 +232,13 @@ a:focus .underscore_text {
     display: none;
     padding: 0;
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 
     position: absolute;
     left: -7px;
     top: 27px;
 
-    width: 143px;
+    width: 143px; /* TODO: min-width or padding-right on li? */
 }
 
 .sub-link {
