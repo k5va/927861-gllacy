@@ -197,11 +197,6 @@ a:focus .underscore_text {
     border-radius: 32px;
 }
 
-/* .site-navigation li:hover .sub-navigation,
-.site-navigation li:focus .sub-navigation {
-    display: block;
-} */
-
 /* TODO: needs refactoring selector depth */
 .site-navigation > li:hover > .sub-navigation {
     display: block;
@@ -261,6 +256,8 @@ a:focus .underscore_text {
 }
 
 .user-navigation {
+    display: flex;
+    align-items: flex-start;
 
     padding-top: 17px;
     margin-left: auto;
@@ -278,6 +275,31 @@ a:focus .underscore_text {
     border-radius: 32px;
 
     margin-right: 5px;
+
+    display: block;
+}
+
+.user-navigation .search-link {
+
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+}
+
+.user-navigation .search-link::before {
+    content: "";
+
+    background-image: url("../img/svg/loupe.svg");
+    background-repeat: no-repeat;
+    background-position: 0, 0;
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    
+    width: 17px;
+    height: 17px;
 }
 
 .user-navigation .login-link,
@@ -476,6 +498,7 @@ a:focus .underscore_text {
 
     position: absolute;
     top: -10px;
+    bottom: -80px; 
     left: -12px;
     z-index: -1; /* TODO: Why it works? */
 
@@ -485,8 +508,8 @@ a:focus .underscore_text {
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
     width: 293px;
-    height: 405px; /* TODO: Ok to set fixed height? */
-
+    /* height: 405px; /* TODO: Not Ok to set fixed height? */
+ 
     display: none;
 }
 
@@ -539,7 +562,8 @@ a:focus .underscore_text {
 
     position: absolute;
     left: 33px;
-    top: 339px;
+    /* top: 339px; */
+    bottom: -50px;
 }
 
 .icecream-item:hover {
