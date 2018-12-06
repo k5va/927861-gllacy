@@ -79,15 +79,19 @@
                 <fieldset>
                     <legend>Цена:</legend>
                     <div class="filter-price-range">
-                        <p class="filter_price_values">
-                            <input type="number" class="filter_price_min" name="filter_price_min" 
+                        <p class="filter-price-values">
+                            <input type="text" class="filter-price-min" name="filter_price_min" 
                                 value="100" readonly tabindex="-1"> руб. - 
-                            <input type="number" class="filter_price_min" name="filter_price_max" 
+                            <input type="text" class="filter-price-max" name="filter_price_max" 
                                 value="500" readonly tabindex="-1"> руб.
                         </p>
-                        <p class="filter_price_controls">
-                            <button type="button" class="range-button">Уменьшить цену</button>
-                            <button type="button" class="range-button">Увеличить цену</button>
+                        <p class="filter-price-controls">
+                            <button type="button" class="range-button-min">
+                                <span class="visually-hidden">Уменьшить цену</span>
+                            </button>
+                            <button type="button" class="range-button-max">
+                                <span class="visually-hidden">Увеличить цену</span>
+                            </button>
                         </p>
                     </div>
                 </fieldset>
@@ -229,13 +233,17 @@
                 </li>
             </ul>
             <ul class="pagination" aria-label="Навигация по страницам">
-                <li class="pagination-item pagination-back"><button type="button">Назад</button></li>
+                <li class="pagination-item pagination-back">
+                    <button type="button"><span class="visually-hidden">Назад</span></button>
+                </li>
                 <li class="pagination-item selected"><button type="button">1</button></li>
                 <li class="pagination-item"><button type="button">2</button></li>
                 <li class="pagination-item"><button type="button">3</button></li>
                 <li class="pagination-item"><button type="button">4</button></li>
                 <li class="pagination-item"><button type="button">5</button></li>
-                <li class="pagination-item pagination-forth"><button type="button">Вперед</button></li>
+                <li class="pagination-item pagination-forth">
+                    <button type="button"><span class="visually-hidden">Вперед</span></button>
+                </li>
             </ul>
         </section>
     </main>

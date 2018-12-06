@@ -89,6 +89,7 @@ a {
 
 /* ------------------------------Links styling------------------------------------- */
 .link {
+    /* TODO: why font parameters here? */
     line-height: 16px;
     font-size: 13px;
     font-weight: normal;
@@ -366,6 +367,9 @@ a:focus .underscore_text {
 
 .contact-info-wrapper {
     align-self: flex-end;
+
+    position: relative;
+    top: -7px;
 }
 
 .contact-info-wrapper .open-time {
@@ -930,8 +934,8 @@ a:focus .underscore_text {
     font-size: 16px;
     font-weight: 500;
 
+    padding: 8px 51px 8px 16px;
     background-color: rgba(255, 255, 255, 0.2);
-
     border-radius: 32px;
 }
 
@@ -939,10 +943,77 @@ a:focus .underscore_text {
     color: #323232;
 }
 
-.filter_price_values input {
+.filter-price-range {
+    position: relative;
+}
+
+.filter-price-values {
+    margin: 0;
+
+    position: absolute;
+    top: -21px;
+    left: 40px;
+}
+
+.filter-price-values input {
     color: inherit;
     background-color: transparent;
     border: none;
+
+    width: 30px;
+}
+
+.filter-price-controls {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 32px;
+
+    position: relative;
+
+    width: 220px;
+    height: 37px;
+}
+
+.filter-price-controls::before {
+    content: "";
+
+    background-color: #ffffff;
+    border: none;
+
+    position: absolute;
+    top: 17px;
+    left: 22px;
+
+    width: 176px;
+    height: 4px;
+}
+
+.filter-price-controls button {
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 9px;
+
+    width: 20px;
+    height: 20px;
+}
+
+.filter-price-controls button:hover,
+.filter-price-controls button:focus {
+    outline: none;
+
+    /* FIXME: */
+    border: 1px solid blueviolet;
+}
+
+.range-button-min {
+    left: 35px;
+}
+
+.range-button-max {
+    right: 67px;
 }
 
 .filter-fat-list {
@@ -1029,6 +1100,8 @@ a:focus .underscore_text {
     
     border: none;
     border-radius: 50px;  
+
+    position: relative;
 }
 
 .pagination-item button:hover,
@@ -1044,6 +1117,12 @@ a:focus .underscore_text {
     background-color: #ffffff;
 }
 
+/* .pagination-back button::before {
+    content: "<";
+
+    position: absolute;
+} */
+
 /* ------------------------------Footer styling------------------------------------- */
 
 .main-footer {
@@ -1056,8 +1135,8 @@ a:focus .underscore_text {
 .footer-social {
     list-style: none;
 
-    margin: 0;
-    padding: 14px 0 0;
+    margin: 0 3px 0 0;
+    padding: 18px 0 0;
 
     display: flex;
 }
@@ -1066,7 +1145,7 @@ a:focus .underscore_text {
     list-style: none;
 
     margin: 0;
-    padding: 10px 0 0;
+    padding: 15px 0 0;
 
     width: 304px;
 
@@ -1102,6 +1181,10 @@ a:focus .underscore_text {
 .social-button img {
     border-radius: 32px;
 } */
+
+.footer-navigation li {
+    margin-bottom: 2px;
+}
 
 /* TODO: Refactor to 2 selectors */
 .footer-navigation li:nth-child(1) .footer-link {
@@ -1207,6 +1290,6 @@ a:focus .underscore_text {
 }
 
 /* TODO: remove me */
-/* img, div,section,a,ul,li,p,footer,header {
+ /* input, img, div,section,a,ul,li,p,footer,header {
     outline: 1px solid red;
-}  */
+}   */
