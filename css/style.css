@@ -266,7 +266,7 @@ a:focus .underscore_text {
     display: flex;
     align-items: flex-start;
 
-    padding-top: 17px;
+    padding-top: 13px;
     margin-left: auto;
 }
 
@@ -281,7 +281,7 @@ a:focus .underscore_text {
 
     border-radius: 32px;
 
-    margin-right: 5px;
+    margin-right: 10px;
 
     display: block;
 }
@@ -1040,23 +1040,20 @@ a:focus .underscore_text {
     margin-bottom: 29px;
 }
 
-.footer-social,
+.footer-social {
+    list-style: none;
+
+    margin: 0;
+    padding: 14px 0 0;
+
+    display: flex;
+}
+
 .footer-navigation {
     list-style: none;
 
     margin: 0;
-    padding: 18px 0 0;
-}
-
-.footer-social {
-    display: flex;
-}
-
-.footer-social li {
-    margin-right: 10px;
-}
-
-.footer-navigation {
+    padding: 10px 0 0;
 
     width: 304px;
 
@@ -1065,9 +1062,55 @@ a:focus .underscore_text {
     align-content: flex-start;
 }
 
+.footer-social li {
+    margin-right: 11px;
+}
+
+.footer-social li:last-child {
+    margin-right: 0;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 38px;
+
+    width: 38px;
+    height: 38px;
+}
+
+.social-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* 
+.social-button img {
+    border-radius: 32px;
+} */
+
 /* TODO: Refactor to 2 selectors */
 .footer-navigation li:nth-child(1) .footer-link {
     font-weight: bold;
+}
+
+.footer-navigation li:nth-child(1) {
+    position: relative;
+}
+
+.footer-navigation li:nth-child(1)::before {
+    content: "";
+
+    background-image: url("../img/svg/heart.svg");
+    background-position: top left;
+
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    
+    width: 15px;
+    height: 13px;
 }
 
 .footer-navigation li:nth-child(odd) {
@@ -1075,8 +1118,9 @@ a:focus .underscore_text {
     margin-right: 31px;
 }
 
-.footer-copyright {
-    line-height: 16px;
+.footer-copyright, 
+.footer-copyright .link {
+    line-height: 18px;
     font-size: 12px;
     font-weight: normal;
 
@@ -1144,3 +1188,8 @@ a:focus .underscore_text {
     font-size: 15px;
     font-weight: bold;
 }
+
+/* TODO: remove me */
+/* img, div,section,a,ul,li,p,footer,header {
+    outline: 1px solid red;
+}  */
