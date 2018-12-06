@@ -1122,13 +1122,17 @@ a:focus .underscore_text {
     margin-right: 31px;
 }
 
-.footer-copyright, 
-.footer-copyright .link {
+.footer-copyright { 
     line-height: 18px;
     font-size: 12px;
     font-weight: normal;
 
     margin: 0;
+}
+
+/* TODO: check font inheritance in other links. Might need refactoring */
+.footer-copyright .link {
+    font: inherit;
 }
 
 /* ------------------------------Popup forms styling------------------------------------- */
