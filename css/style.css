@@ -803,6 +803,9 @@ a:focus .underscore_text {
 
 .contacts {
 
+    display: flex;
+    justify-content: center;
+
     margin-bottom: 18px;
 
     position: relative;
