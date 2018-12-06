@@ -500,7 +500,7 @@ a:focus .underscore_text {
 /* ------------------------------Icecreams list styling------------------------------------- */
 
  .index-main .icecreams {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 } 
 
 .catalog-main .icecream-list {
@@ -526,8 +526,12 @@ a:focus .underscore_text {
     position: relative;
 }
 
-.catalog-main .icecream-item {
-    margin-bottom: 40px;
+.icecream-item {
+    margin-top: 40px;
+}
+
+.icecream-item:nth-child(-n + 4) {
+    margin-top: 0;
 }
 
 .icecream-item::before {
