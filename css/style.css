@@ -665,22 +665,23 @@ a:focus .underscore_text {
     margin: 0;
 }
 
-.feature-production,
-.feature-ingredients {
+.features-list .feature-item:nth-child(odd) {
     width: 476px;
 
     margin-right: 91px;
     margin-left: 56px; /* TODO: Ok using margin-left? */
 }
 
-.feature-suppliers,
-.feature-delivery {
+.features-list .feature-item:nth-child(even) {
     width: 470px;
 }
 
-.feature-production,
-.feature-suppliers {
-    margin-bottom: 22px;
+.feature-item {
+    margin-top: 22px;
+}
+
+.feature-item:nth-child(-n + 2) {
+    margin-top: 0;
 }
 
 .feature-item::after {
