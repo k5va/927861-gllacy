@@ -355,9 +355,13 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 }
 
-.user-navigation a.cart-loaded {
+.user-navigation .cart-loaded {
     color: #323232;
     background-color: #f8f7f4;
+}
+
+.user-navigation .cart-loaded::before {
+    background-image: url("../img/svg/basket-red.svg");
 }
 
 .contact-info-wrapper {
