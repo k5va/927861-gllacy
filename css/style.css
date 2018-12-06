@@ -21,6 +21,7 @@ html {
     box-sizing: content-box;
 }
 
+/* TODO: replace the latest version */
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -293,12 +294,12 @@ a:focus .underscore_text {
     height: 32px;
 }
 
+/* TODO: might be content image? */
 .user-navigation .search-link::before {
     content: "";
 
     background-image: url("../img/svg/loupe.svg");
-    background-repeat: no-repeat;
-    background-position: 0, 0;
+    background-position: top left;
 
     position: absolute;
     top: 8px;
@@ -312,10 +313,40 @@ a:focus .underscore_text {
 .user-navigation .cart-link {
 
     padding: 5px 17px 10px 44px;
+
+    position: relative;
 }
 
 .user-navigation .cart-link {
     margin-right: 0;
+}
+
+.user-navigation .cart-link::before {
+    content: "";
+
+    background-image: url("../img/svg/basket.svg");
+    background-position: top left;
+
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    
+    width: 21px;
+    height: 19px;
+}
+
+.user-navigation .login-link::before {
+    content: "";
+
+    background-image: url("../img/svg/entrance.svg");
+    background-position: top left;
+
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    
+    width: 21px;
+    height: 19px;
 }
 
 .user-navigation a:hover {
