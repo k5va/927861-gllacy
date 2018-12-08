@@ -114,6 +114,7 @@ a {
 
     background-color: #ffffff;
     
+    padding: 15px 10px;
     border-radius: 5px;
     border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -1235,16 +1236,47 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 
     border-radius: 5px;
+    padding: 20px 17px 20px 19px;
+
+    position: absolute;
+}
+
+.login-form p {
+    margin: 0;
+}
+
+.login-form .input-field {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+
+    margin-bottom: 20px;
+    padding: 10px 0 10px 15px;
+
+    width: 241px;
+}
+
+.login-form .button {
+    padding: 10px 25px;
 }
 
 .login-form-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .login-form-link {
     line-height: 24px;
     font-size: 13px;
     font-weight: normal;
+    color: #323232;
+}
+
+.login-form-actions-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ------------------------------Search form styling------------------------------------- */

@@ -258,7 +258,7 @@
         </div>
     </footer>
 
-    <section class="login-form hidden">
+    <section class="login-form">
         <h2 class="visually-hidden">Форма входа в магазин</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
@@ -271,11 +271,13 @@
                 <input class="input-field" type="password" name="login_password" 
                     id="login_password" placeholder="Пароль" required>
             </p>
-            <button type="submit" class="button">Войти</button>
-            <ul class="login-form-navigation">
-                <li><a class="login-form-link link" href="restore_password.html">Забыли пароль?</a></li>
-                <li><a class="login-form-link link" href="new_user.html">Новая регистрация</a></li>
-            </ul>
+            <div class="login-form-actions-wrapper">
+                <button type="submit" class="button">Войти</button>
+                <ul class="login-form-navigation">
+                    <li><a class="login-form-link link" href="restore_password.html">Забыли пароль?</a></li>
+                    <li><a class="login-form-link link" href="new_user.html">Новая регистрация</a></li>
+                </ul>
+            </div>
         </form>
     </section>
 
