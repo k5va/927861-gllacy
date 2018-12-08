@@ -1285,6 +1285,20 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 
     border-radius: 5px;   
+    padding: 20px 15px;
+
+    position: absolute;
+}
+
+.search-form .input-field {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+
+    padding: 10px 0 10px 15px;
+
+    width: 311px;
 }
 
 /* ------------------------------Modal feedback form styling------------------------------------- */
