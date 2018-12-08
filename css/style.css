@@ -1376,13 +1376,73 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 
     border-radius: 5px;   
+    padding: 20px 15px;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.card_total {
+.cart-list {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-list td {
+    padding-bottom: 20px;
+}
+
+.cart-remove {
+    width: 25px;
+}
+
+.cart-image {
+    width: 47px;
+}
+
+.cart-image img {
+    vertical-align: bottom;
+}
+
+.cart-name {
+    width: 247px;
+}
+
+.cart-weight {
+    width: 122px;
+}
+
+.cart-cost {
+    width: 68px;
+}
+
+.cart-remove-button {
+    background-color: transparent;
+    border: none;
+
+    padding: 0;
+}
+
+.cart-total {
     line-height: 18px;
     font-size: 15px;
     font-weight: bold;
 }
+
+.cart-total td {
+    text-align: right;
+
+    padding: 10PX 0 0 0;
+    border-top: 1px solid #cacac7;
+}
+
+.checkout-form .button {
+    padding: 10px 15px;
+    margin-left: auto;
+}
+
+
 
 /* TODO: remove me */
  /* input, img, div,section,a,ul,li,p,footer,header {

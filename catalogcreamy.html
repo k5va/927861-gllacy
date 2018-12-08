@@ -295,7 +295,7 @@
     
     <section class="checkout-form hidden">
         <h2 class="visually-hidden">Состав корзины покупателя</h2>
-        <table class="card_list">
+        <table class="cart-list">
             <tr class="visually-hidden">
                 <th>Удалить из корзины</th>
                 <th>Изображение мороженого</th>
@@ -303,23 +303,35 @@
                 <th>Вес и цена</th>
                 <th>Стоимость</th>
             </tr>
-            <tr class="card_item">
-                <td><button type="button" class="card_remove_button">Удалить</button></td>
-                <td><img class="card_image" src="img/icecream-1.png" 
-                        alt="Изображение пломбира с апельсиновым джемом"></td>
-                <td class="card_name">Пломбир с апельсиновым джемом</td>
-                <td class="card_weight">1,5 кг х <span class="card_price">200 руб.</span></td>
-                <td class="card_cost">300 руб.</td>
+            <tr class="cart-item">
+                <td class="cart-remove">
+                    <button type="button" class="cart-remove-button">X
+                        <span class="visually-hidden">Удалить</span>
+                    </button>
+                </td>
+                <td class="cart-image">
+                    <img src="img/icecream-1.png" width="33" height="33"
+                        alt="Изображение пломбира с апельсиновым джемом">
+                </td>
+                <td class="cart-name">Пломбир с апельсиновым джемом</td>
+                <td class="cart-weight">1,5 кг х <span class="cart-price">200 руб.</span></td>
+                <td class="cart-cost">300 руб.</td>
             </tr>
-            <tr class="card_item">
-                <td><button type="button" class="card_remove_button">Удалить</button></td>
-                <td><img class="card_image" src="img/icecream-3.png" 
-                        alt="Изображение клубничного пломбира с присыпкой из белого шоколада"></td>
-                <td class="card_name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="card_weight">1,5 кг х <span class="card_price">300 руб.</span></td>
-                <td class="card_cost">450 руб.</td>
+            <tr class="cart-item">
+                <td class="cart-remove">
+                    <button type="button" class="cart-remove-button">X
+                        <span class="visually-hidden">Удалить</span>
+                    </button>
+                </td>
+                <td class="cart-image">
+                    <img src="img/icecream-3.png" width="33" height="33"
+                        alt="Изображение клубничного пломбира с присыпкой из белого шоколада">
+                </td>
+                <td class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="cart-weight">1,5 кг х <span class="cart-price">300 руб.</span></td>
+                <td class="cart-cost">450 руб.</td>
             </tr>
-            <tr class="card_total">
+            <tr class="cart-total">
                 <td colspan="5">Итого: 750 руб.</td>
             </tr>
         </table>
