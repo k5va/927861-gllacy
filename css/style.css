@@ -547,9 +547,9 @@ a:focus .underscore_text {
     content: "";
 
     position: absolute;
-    top: -10px;
-    bottom: -80px; 
-    left: -12px;
+    top: -5px;
+    bottom: -75px; 
+    left: -13px;
     z-index: -1; 
 
     background-color: rgba(255, 255, 255, 0.2);
