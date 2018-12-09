@@ -5,6 +5,8 @@ const loginForm = document.querySelector(".login-form");
 const showFeedbackFormButton = document.querySelector(".contacts-feedback .button");
 const feedbackForm = document.querySelector(".modal-feedback");
 const closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
+const showCartLink = document.querySelector(".user-navigation .cart-loaded");
+const checkoutForm = document.querySelector(".checkout-form");
 
 searchLink.addEventListener("mouseover", (event) => {
     loginForm.style.display = "none";
@@ -35,4 +37,17 @@ showFeedbackFormButton.addEventListener("click", (event) => {
 
 closeFeedbackFormButton.addEventListener("click", (event) => {
     feedbackForm.style.display = "none";
+});
+  
+showCartLink.addEventListener("mouseover", (event) => {
+    loginForm.style.display = "none";
+    searchForm.style.display = "none";
+ 
+    checkoutForm.style.display = "block";
+});
+
+checkoutForm.addEventListener("mouseleave", (event) => {
+    if (event.relatedTarget !== null) {
+        checkoutForm.style.display = "none";
+    }
 });

@@ -1098,7 +1098,8 @@ a:focus .underscore_text {
     text-align: center;
 
     background-color: transparent;
-    
+
+    padding: 0;
     border: none;
     border-radius: 50px;  
 
@@ -1118,11 +1119,30 @@ a:focus .underscore_text {
     background-color: #ffffff;
 }
 
-/* .pagination-back button::before {
-    content: "<";
+.pagination-back button::before,
+.pagination-forth button::before {
+    content: "";
+
+    border: solid #ffffff;
+    border-width: 0 1px 1px 0;
+
+    width: 11px;
+    height: 11px;
 
     position: absolute;
-} */
+}
+
+.pagination-back button::before {
+    transform: rotate(135deg);
+    top: 8px;
+    left: 10px;
+}
+
+.pagination-forth button::before {
+    transform: rotate(-45deg);
+    top: 8px;
+    right: 10px;
+}
 
 /* ------------------------------Footer styling------------------------------------- */
 
@@ -1386,7 +1406,11 @@ a:focus .underscore_text {
     padding: 20px 15px;
 
     position: absolute;
+    top: 60px;
+    left: calc(50% + 35px);
+}
 
+.checkout-form .wrapper {
     display: flex;
     flex-direction: column;
 }
