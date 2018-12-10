@@ -440,7 +440,7 @@ a:focus .underscore_text {
     z-index: -1;
 
     top: 0;
-    left: 110px;
+    left: 110px; /* TODO: correct position? */
 }
 
 .main-banner-info {
@@ -460,6 +460,40 @@ a:focus .underscore_text {
     font-weight: bold;
 
     padding: 10px 40px 12px 40px;
+}
+
+.banner-controls {
+    display: flex;
+
+    position: absolute;
+    top: 563px;
+    left: calc(50% - 573px);
+}
+
+.banner-controls label {
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 8px;
+
+    width: 21px;
+    height: 21px;
+}
+
+/* TODO: how to refactor depth? */
+#banner-1:checked ~ .index-main label[for = "banner-1"],
+#banner-2:checked ~ .index-main label[for = "banner-2"],
+#banner-3:checked ~ .index-main label[for = "banner-3"] {
+    background-color: #ffffff;
+}
+
+#banner-1:checked ~ .index-main .main-banner-item:nth-child(1),
+#banner-2:checked ~ .index-main .main-banner-item:nth-child(2),
+#banner-3:checked ~ .index-main .main-banner-item:nth-child(3) {
+    display: block;
 }
 
 
@@ -1485,8 +1519,6 @@ a:focus .underscore_text {
     padding: 10px 15px;
     margin-left: auto;
 }
-
-
 
 /* TODO: remove me */
  /* input, img, div,section,a,ul,li,p,footer,header {
