@@ -1287,18 +1287,12 @@ a:focus .underscore_text {
     margin-right: 0;
 }
 
-.social-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
 .social-button:hover img {
     border-color: rgba(255, 255, 255, 0.7);
 }
  
 .social-button img {
-    border-radius: 32px;
+    border-radius: 33px;
     border: 3px solid rgba(255, 255, 255, 0.5);
     box-sizing: content-box;
 }
