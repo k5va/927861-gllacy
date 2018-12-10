@@ -240,15 +240,34 @@ a:focus .underscore_text {
 
     position: absolute;
     left: -7px;
-    top: 27px;
+    top: 31px;
 
     width: 143px; /* TODO: min-width or padding-right on li? */
+}
+
+.sub-navigation li:nth-child(1)::after {
+    content: "";
+
+    background-color: #323232;
+    margin: 0 auto;
+    margin-top: -1px;
+
+    display: block;
+
+    height: 1px;
+    width: 128px;
+    opacity: 0.2;
 }
 
 .sub-link {
     display: block;
 
-    padding: 10px 0 10px 21px;
+    padding: 5px 0 8px 21px;
+}
+
+.sub-navigation li:nth-child(1) .sub-link {
+    padding-top: 10px;
+    padding-bottom: 12px
 }
 
 .sub-link:hover,
@@ -262,6 +281,12 @@ a:focus .underscore_text {
     color: #323232;
 
     background-color: #f6b5a5;
+}
+
+.sub-link.selected {
+    color: #ffffff;
+
+    background-color: #d07058;
 }
 
 .user-navigation {
