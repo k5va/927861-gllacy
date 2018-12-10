@@ -958,13 +958,19 @@ a:focus .underscore_text {
     list-style: none;
 
     padding: 0;
-    margin: -20px 0 5px;
+    margin: -30px 0 5px;
 
     display: flex;
 }
 
 .breadcrumbs li {
-    margin-right: 21px;
+    margin-right: 5px;
+}
+
+.breadcrumbs li:nth-child(-n + 2)::after {
+    content: "»";
+
+    padding-left: 8px;
 }
 
 .breadcrumbs-link {
