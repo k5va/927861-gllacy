@@ -1302,10 +1302,11 @@ a:focus .underscore_text {
 .social-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
-/* 
+ 
 .social-button img {
     border-radius: 32px;
-} */
+    background-color: #849d8f;
+}
 
 .footer-navigation li {
     margin-bottom: 2px;
