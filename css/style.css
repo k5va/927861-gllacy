@@ -1539,6 +1539,10 @@ a:focus .underscore_text {
     width: 122px;
 }
 
+.cart-price {
+    color: #999999;
+}
+
 .cart-cost {
     width: 68px;
 }
