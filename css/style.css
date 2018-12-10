@@ -311,6 +311,10 @@ a:focus .underscore_text {
     height: 17px;
 }
 
+.user-navigation .search-link:hover::before {
+    background-image: url("../img/svg/loupe_black.svg");
+}
+
 .user-navigation .login-link,
 .user-navigation .cart-link {
 
@@ -337,6 +341,10 @@ a:focus .underscore_text {
     height: 19px;
 }
 
+.user-navigation .cart-link:hover::before {
+    background-image: url("../img/svg/basket_black.svg");
+}
+
 .user-navigation .login-link::before {
     content: "";
 
@@ -351,6 +359,10 @@ a:focus .underscore_text {
     height: 19px;
 }
 
+.user-navigation .login-link:hover::before {
+    background-image: url("../img/svg/entrance_black.svg");
+}
+
 .user-navigation a:hover {
     color: #323232;
 
@@ -362,7 +374,8 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 }
 
-.user-navigation .cart-loaded::before {
+.user-navigation .cart-loaded::before,
+.user-navigation .cart-loaded:hover::before {
     background-image: url("../img/svg/basket-red.svg");
 }
 
