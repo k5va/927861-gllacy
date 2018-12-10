@@ -5,8 +5,11 @@ const loginForm = document.querySelector(".login-form");
 const showFeedbackFormButton = document.querySelector(".contacts-feedback .button");
 const feedbackForm = document.querySelector(".modal-feedback");
 const closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
-const showCartLink = document.querySelector(".user-navigation .cart-loaded");
-const checkoutForm = document.querySelector(".checkout-form");
+const showCartLink = document.querySelector(".user-navigation .cart-link");
+
+const checkoutForm = showCartLink.classList.contains("cart-loaded") ?
+    document.querySelector(".checkout-form") : 
+    null;
 
 searchLink.addEventListener("mouseover", (event) => {
     loginForm.style.display = "none";
@@ -28,7 +31,7 @@ loginLink.addEventListener("mouseover", (event) => {
     if (checkoutForm !== null) {
         checkoutForm.style.display = "none";
     }
-    
+
     loginForm.style.display = "block";
 });
 
@@ -49,14 +52,16 @@ if (showFeedbackFormButton !== null) {
     });
 }
 
-if (showCartLink !== null) {
-    showCartLink.addEventListener("mouseover", (event) => {
-        loginForm.style.display = "none";
-        searchForm.style.display = "none";
-     
-        checkoutForm.style.display = "block";
-    });
+showCartLink.addEventListener("mouseover", (event) => {
+    loginForm.style.display = "none";
+    searchForm.style.display = "none";
     
+    if (checkoutForm !== null) {
+        checkoutForm.style.display = "block";     
+    }
+});
+
+if (checkoutForm !== null) {
     checkoutForm.addEventListener("mouseleave", (event) => {
         if (event.relatedTarget !== null) {
             checkoutForm.style.display = "none";
