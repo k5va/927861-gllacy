@@ -439,7 +439,20 @@ a:focus .underscore_text {
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 39px;
+    margin-bottom: 17px;
+}
+
+.catalog-main::after {
+    content: "";
+
+    background-color: #ffffff;
+    opacity: 0.3;
+
+    margin: 0 auto;
+    margin-top: 27px;
+
+    height: 1px;
+    width: 1146px;
 }
 
 /* ------------------------------Main banner styling------------------------------------- */
@@ -585,7 +598,7 @@ a:focus .underscore_text {
 } 
 
 .catalog-main .icecream-list {
-    margin-bottom: 53px;
+    margin-bottom: 78px;
 }
 
 .icecream-list {
@@ -995,6 +1008,10 @@ a:focus .underscore_text {
     font-weight: 500;
 
     margin-bottom: 40px;
+}
+
+.icecream-filter fieldset {
+    padding: 0;
 }
 
 .icecream-filter-form {
