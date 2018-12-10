@@ -1365,8 +1365,6 @@ a:focus .underscore_text {
 .login-form .input-field {
     line-height: 24px;
     font-size: 14px;
-    font-weight: normal;
-    color: #999999;
 
     margin-bottom: 20px;
     padding: 10px 0 10px 15px;
@@ -1412,8 +1410,6 @@ a:focus .underscore_text {
 .search-form .input-field {
     line-height: 24px;
     font-size: 14px;
-    font-weight: normal;
-    color: #999999;
 
     padding: 10px 0 10px 15px;
 
@@ -1457,8 +1453,6 @@ a:focus .underscore_text {
 .modal-feedback .input-field {
     line-height: 24px;
     font-size: 16px;
-    font-weight: normal;
-    color: #999999;
 
     padding: 10px 0 10px 15px;
 
