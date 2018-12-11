@@ -864,7 +864,7 @@ a:focus .underscore_text {
 
     background-color: #f8f7f4;
     background-position: top left;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url("../img/svg/bg-post.svg");
 
     padding: 5px;
