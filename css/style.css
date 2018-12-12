@@ -487,7 +487,7 @@ a:focus .underscore_text {
     z-index: -1;
 
     top: 0;
-    left: calc(50% - 522px);
+    left: calc(50% - 522px); /* TODO: transform(-50%)? */
 }
 
 .main-banner-info {
@@ -530,7 +530,7 @@ a:focus .underscore_text {
     height: 21px;
 }
 
-/* TODO: how to refactor depth? */
+/* TODO: change page bg color*/
 #banner-1:checked ~ .index-main label[for = "banner-1"],
 #banner-2:checked ~ .index-main label[for = "banner-2"],
 #banner-3:checked ~ .index-main label[for = "banner-3"] {
@@ -1019,17 +1019,24 @@ a:focus .underscore_text {
     margin-bottom: 40px;
 }
 
-.icecream-filter fieldset {
-    padding: 0;
-}
-
 .icecream-filter-form {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.icecream-filter-form legend {
+    margin: 0 0 6px 16px;
 }
 
 .icecream-filter-form fieldset {
     border: none;
+    padding: 0;
+    margin: 0 15px 0 0;
+}
+
+.icecream-filter-form fieldset:nth-child(-n + 3) {
+    margin-bottom: 14px;
 }
 
 /* TODO: How to style dropdown list? */
@@ -1039,7 +1046,7 @@ a:focus .underscore_text {
     font-size: 16px;
     font-weight: 500;
 
-    padding: 8px 51px 8px 16px;
+    padding: 7px 13px 7px 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 32px;
 }
@@ -1056,8 +1063,8 @@ a:focus .underscore_text {
     margin: 0;
 
     position: absolute;
-    top: -21px;
-    left: 40px;
+    top: -24px;
+    left: 56px;
 }
 
 .filter-price-values input {
@@ -1065,7 +1072,7 @@ a:focus .underscore_text {
     background-color: transparent;
     border: none;
 
-    width: 30px;
+    width: 25px;
 }
 
 .filter-price-controls {
@@ -1086,7 +1093,7 @@ a:focus .underscore_text {
     border: none;
 
     position: absolute;
-    top: 17px;
+    top: 16px;
     left: 22px;
 
     width: 176px;
@@ -1099,7 +1106,7 @@ a:focus .underscore_text {
     background-color: #ffffff;
 
     position: absolute;
-    top: 9px;
+    top: 8px;
 
     width: 20px;
     height: 20px;
@@ -1124,7 +1131,10 @@ a:focus .underscore_text {
 .filter-fat-list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 14px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 32px;
 
     display: flex;
 }
@@ -1133,12 +1143,54 @@ a:focus .underscore_text {
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
+
+    margin-right: 18px;
+}
+
+.filter-fat-option:last-child {
+    margin-right: 0;
+}
+
+.filter-fat-option label {
+    position: relative;
+    padding-left: 32px;
+}
+
+.radio-indicator {
+    border: 3px solid #ffffff;
+    border-radius: 22px;
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+    
+    width: 22px;
+    height: 22px;
+}
+
+.filter-fat-option input[type="radio"]:checked + .radio-indicator::before {
+    content: "";
+    
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    /* transform: translate(-50%, -50%); */
+    
+    width: 8px;
+    height: 8px;
 }
 
 .filter-filler-list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 10px 20px 10px 14px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 32px;
 
     display: flex;
 }
@@ -1147,6 +1199,36 @@ a:focus .underscore_text {
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
+
+    margin-right: 20px;
+}
+
+.filter-filler-option:last-child {
+    margin-right: 0;
+}
+
+.filter-filler-option label {
+    position: relative;
+
+    padding-left: 33px;
+}
+
+.filter-filler-option .checkbox-indicator {
+    
+    background-image: url("../img/svg/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    
+    width: 26px;
+    height: 23px;
+}
+
+.filter-filler-option input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url("../img/svg/checkbox-on.svg");
 }
 
 .filter-button {
@@ -1161,6 +1243,7 @@ a:focus .underscore_text {
     
     border: 2px solid #ffffff;
     border-radius: 37px;
+    padding: 8px 25px 8px 30px;
 }
 
 .filter-button:hover,

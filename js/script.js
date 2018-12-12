@@ -11,6 +11,8 @@ const checkoutForm = showCartLink.classList.contains("cart-loaded") ?
     document.querySelector(".checkout-form") : 
     null;
 
+/* TODO: close popups when mouse on site navigation menu */
+
 searchLink.addEventListener("mouseover", (event) => {
     loginForm.style.display = "none";
     if (checkoutForm !== null) {
