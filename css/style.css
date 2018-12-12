@@ -1051,7 +1051,10 @@ a:focus .underscore_text {
     border-radius: 32px;
 }
 
-.filter-sort:hover {
+.filter-sort:hover,
+.filter-sort:active,
+.filter-sort:focus {
+    outline: none;
     color: #323232;
 }
 
@@ -1156,9 +1159,10 @@ a:focus .underscore_text {
     padding-left: 32px;
 }
 
-.radio-indicator {
+.filter-fat-option .radio-indicator {
     border: 3px solid #ffffff;
     border-radius: 22px;
+    opacity: 0.8;
 
     position: absolute;
     top: -2px;
@@ -1166,6 +1170,11 @@ a:focus .underscore_text {
     
     width: 22px;
     height: 22px;
+}
+
+.filter-fat-option input[type="radio"]:focus + .radio-indicator,
+.filter-fat-option label:hover .radio-indicator { /* TODO: refactor depth */
+    opacity: 1;
 }
 
 .filter-fat-option input[type="radio"]:checked + .radio-indicator::before {
@@ -1218,6 +1227,7 @@ a:focus .underscore_text {
     background-image: url("../img/svg/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: top left;
+    opacity: 0.8;
 
     position: absolute;
     top: -2px;
@@ -1225,6 +1235,11 @@ a:focus .underscore_text {
     
     width: 26px;
     height: 23px;
+}
+
+.filter-filler-option input[type="checkbox"]:focus + .checkbox-indicator,
+.filter-filler-option label:hover .checkbox-indicator { /* TODO: refactor depth */
+    opacity: 1;
 }
 
 .filter-filler-option input[type="checkbox"]:checked + .checkbox-indicator {
