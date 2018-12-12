@@ -6,12 +6,10 @@ const showFeedbackFormButton = document.querySelector(".contacts-feedback .butto
 const feedbackForm = document.querySelector(".modal-feedback");
 const closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
 const showCartLink = document.querySelector(".user-navigation .cart-link");
-
 const checkoutForm = showCartLink.classList.contains("cart-loaded") ?
     document.querySelector(".checkout-form") : 
     null;
-
-/* TODO: close popups when mouse on site navigation menu */
+const siteNavigation = document.querySelector(".site-navigation");
 
 searchLink.addEventListener("mouseover", (event) => {
     loginForm.style.display = "none";
@@ -70,3 +68,12 @@ if (checkoutForm !== null) {
         }
     });
 }
+
+siteNavigation.addEventListener("mouseover", (event) => {
+    loginForm.style.display = "none";
+    searchForm.style.display = "none";
+
+    if (checkoutForm !== null) {
+        checkoutForm.dispay.style = "none";
+    }
+});

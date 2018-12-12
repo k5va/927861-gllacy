@@ -1119,7 +1119,6 @@ a:focus .underscore_text {
 .filter-price-controls button:focus {
     outline: none;
 
-    /* FIXME: */
     border: 1px solid blueviolet;
 }
 
