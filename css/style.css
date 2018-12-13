@@ -1039,16 +1039,16 @@ a:focus .underscore_text {
     margin-bottom: 14px;
 }
 
-/* TODO: How to style dropdown list? */
 .filter-sort {
     color: inherit;
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
 
-    padding: 7px 13px 7px 10px;
+    padding: 9px 15px 8px 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 32px;
+    border: none;
 }
 
 .filter-sort:hover,
@@ -1180,16 +1180,14 @@ a:focus .underscore_text {
     content: "";
     
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 100%;
 
-    display: block;
     position: absolute;
-    top: 4px;
-    left: 4px;
-    /* transform: translate(-50%, -50%); */
+    top: 3.7px;
+    left: 3.7px;
     
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
 }
 
 .filter-filler-list {
@@ -1363,6 +1361,7 @@ a:focus .underscore_text {
     display: flex;
 }
 
+/* TODO: Refactor to shadow not border */
 .footer-navigation {
     list-style: none;
 
@@ -1569,12 +1568,38 @@ a:focus .underscore_text {
     margin-left: auto;
 }
 
-.modal-feedback .modal-close {
+.modal-close {
     border: none;
+    background-color: transparent;
+    cursor: pointer;
     
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
+
+    width: 25px;
+    height: 25px;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    background-color: #000000;    
+    
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 10px);
+
+    width: 20px;
+    height: 2px;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 
 /* ------------------------------Checkout form styling------------------------------------- */

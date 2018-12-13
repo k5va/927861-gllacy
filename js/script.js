@@ -74,6 +74,6 @@ siteNavigation.addEventListener("mouseover", (event) => {
     searchForm.style.display = "none";
 
     if (checkoutForm !== null) {
-        checkoutForm.dispay.style = "none";
+        checkoutForm.style.display = "none";
     }
 });
