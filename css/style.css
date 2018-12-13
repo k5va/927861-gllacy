@@ -1304,10 +1304,6 @@ a:focus .underscore_text {
 }
 
 .pagination-item button {
-
-    width: 27px;
-    height: 26px;
-
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
@@ -1321,9 +1317,18 @@ a:focus .underscore_text {
     border-radius: 50px;  
 
     position: relative;
+
+    width: 27px;
+    height: 26px;
+
+    cursor: pointer;
 }
 
-.pagination-item button:hover,
+.pagination-item button:disabled {
+    opacity: 0.2;
+}
+
+.pagination-item:not(.pagination-forth):not(.pagination-back) button:hover,
 .pagination-item button:focus {
     outline: none;
 
@@ -1343,8 +1348,8 @@ a:focus .underscore_text {
     border: solid #ffffff;
     border-width: 0 1px 1px 0;
 
-    width: 11px;
-    height: 11px;
+    width: 9px;
+    height: 9px;
 
     position: absolute;
 }
@@ -1352,13 +1357,13 @@ a:focus .underscore_text {
 .pagination-back button::before {
     transform: rotate(135deg);
     top: 8px;
-    left: 10px;
+    left: 2px;
 }
 
 .pagination-forth button::before {
     transform: rotate(-45deg);
     top: 8px;
-    right: 10px;
+    right: 2px;
 }
 
 /* ------------------------------Footer styling------------------------------------- */
