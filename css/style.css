@@ -1089,11 +1089,13 @@ a:focus .underscore_text {
     height: 37px;
 }
 
-.filter-price-controls::before {
+.filter-price-controls::before,
+.filter-price-controls::after {
     content: "";
 
     background-color: #ffffff;
     border: none;
+    opacity: 0.5;
 
     position: absolute;
     top: 16px;
@@ -1103,23 +1105,35 @@ a:focus .underscore_text {
     height: 4px;
 }
 
+.filter-price-controls::after {
+    opacity: 1;
+
+    left: 40px;
+
+    width: 107px;
+}
+
 .filter-price-controls button {
-    border-radius: 20px;
-    border: none;
-    background-color: #ffffff;
+    border-radius: 100%;
+    border: 7px solid rgba(255, 255, 255, 0.8);
+    background-color: #849d8f;
+    
+    padding: 0;
 
     position: absolute;
+    z-index: 1;
     top: 8px;
 
     width: 20px;
     height: 20px;
+
+    cursor: pointer;
 }
 
 .filter-price-controls button:hover,
 .filter-price-controls button:focus {
     outline: none;
-
-    border: 1px solid blueviolet;
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .range-button-min {
@@ -1156,6 +1170,8 @@ a:focus .underscore_text {
 .filter-fat-option label {
     position: relative;
     padding-left: 32px;
+
+    cursor: pointer;
 }
 
 .filter-fat-option .radio-indicator {
@@ -1217,6 +1233,8 @@ a:focus .underscore_text {
     position: relative;
 
     padding-left: 33px;
+
+    cursor: pointer;
 }
 
 .filter-filler-option .checkbox-indicator {
