@@ -1167,17 +1167,20 @@ a:focus .underscore_text {
     margin-right: 0;
 }
 
-.filter-fat-option label {
+.radio-indicator {
     position: relative;
     padding-left: 32px;
+
+    opacity: 0.8;
 
     cursor: pointer;
 }
 
-.filter-fat-option .radio-indicator {
+.radio-indicator::before {
+    content: "";
+    
     border: 3px solid #ffffff;
     border-radius: 22px;
-    opacity: 0.8;
 
     position: absolute;
     top: -2px;
@@ -1188,22 +1191,22 @@ a:focus .underscore_text {
 }
 
 .filter-fat-option input[type="radio"]:focus + .radio-indicator,
-.filter-fat-option label:hover .radio-indicator { /* TODO: refactor depth */
+.radio-indicator:hover { 
     opacity: 1;
 }
 
-.filter-fat-option input[type="radio"]:checked + .radio-indicator::before {
+.filter-fat-option input[type="radio"]:checked + .radio-indicator::after {
     content: "";
     
     background-color: #ffffff;
     border-radius: 100%;
 
     position: absolute;
-    top: 3.7px;
-    left: 3.7px;
+    top: 5px;
+    left: 7px;
     
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
 }
 
 .filter-filler-list {
