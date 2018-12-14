@@ -103,7 +103,7 @@ a {
     font-size: 13px;
     font-weight: normal;
 
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .link:hover,
@@ -355,7 +355,7 @@ a:focus .underscore_text {
 .user-navigation .login-link,
 .user-navigation .cart-link {
 
-    padding: 5px 17px 10px 44px;
+    padding: 7px 17px 10px 44px;
 
     position: relative;
 }
@@ -499,7 +499,7 @@ a:focus .underscore_text {
     font-weight: bold;
     text-align: center;
 
-    margin: 0 auto 29px;
+    margin: 0 auto 31px;
 
     width: 670px;
 }
@@ -509,7 +509,7 @@ a:focus .underscore_text {
     font-size: 32px;
     font-weight: bold;
 
-    padding: 10px 40px 12px 40px;
+    padding: 8px 41px 12px 41px;
 }
 
 .banner-controls {
@@ -565,7 +565,7 @@ a:focus .underscore_text {
 
     border-radius: 15px;
 
-    padding: 18px 21px 23px 20px;
+    padding: 16px 21px 25px 19px;
 
     width: 560px;
 }
@@ -600,7 +600,7 @@ a:focus .underscore_text {
 }
 
 .special-offer .button {
-    padding: 10px 19px;
+    padding: 10px 22px 10px 22px;
 }
 
 /* ------------------------------Icecreams list styling------------------------------------- */
@@ -610,7 +610,7 @@ a:focus .underscore_text {
 } 
 
 .catalog-main .icecream-list {
-    margin-bottom: 78px;
+    margin-bottom: 82px;
 }
 
 .icecream-list {
@@ -633,7 +633,7 @@ a:focus .underscore_text {
 }
 
 .icecream-item {
-    margin-top: 40px;
+    margin-top: 38px;
 }
 
 .icecream-item:nth-child(-n + 4) {
@@ -735,7 +735,7 @@ a:focus .underscore_text {
     background-repeat: repeat;
     background-image: url("../img/about-gllacy-grid.jpg");
 
-    padding: 23px 20px 26px;
+    padding: 25px 20px 24px 20px;
     margin-bottom: 40px;
 }
 
@@ -795,7 +795,7 @@ a:focus .underscore_text {
 
     display: block;
     position: absolute;
-    left: -56px;
+    left: -57px;
     top: -13px;
 
     width: 49px;
@@ -835,7 +835,7 @@ a:focus .underscore_text {
     background-repeat: no-repeat;
     background-image: url("../img/blog-icecream.jpg");
 
-    padding: 20px 19px 80px;
+    padding: 22px 19px 81px 19px;
 
     width: 560px;
 }
@@ -845,13 +845,14 @@ a:focus .underscore_text {
     font-size: 16px;
     font-weight: 500;
 
-    margin: 0 0 8px;
+    margin: 0 0 5px 0;
 }
 
 .blog-record-link {
     line-height: 30px;
     font-size: 24px;
     font-weight: bold;
+    text-decoration: underline;
 
     display: inline-block;
 
@@ -931,19 +932,18 @@ a:focus .underscore_text {
 
     border-radius: 15px;
 
-    padding: 25px 0 30px 25px;
+    padding: 28px 0 30px 25px;
     width: 302px;
 
     position: absolute;
     top: 63px;
-    /* right: 27px; */
     left: calc(50% + 271px);
 }
 
 .contacts-feedback h2 {
     font: inherit;
 
-    margin: 0 0 3px;
+    margin: 0 0 2px;
     width: 148px;
 }
 
@@ -952,8 +952,12 @@ a:focus .underscore_text {
     font-size: 18px;
     font-weight: bold;
 
-    margin: 0;
+    margin: 0 0 17px 0;
     width: 225px;
+}
+
+.contacts-feedback p:nth-child(3) {
+    margin: 0 0 6px 0;
 }
 
 .contacts-feedback .feedback-phone {
@@ -967,14 +971,14 @@ a:focus .underscore_text {
     font-size: 14px;
     font-weight: normal;
 
-    margin: 0 0 20px;
+    margin: 0 0 25px 0;
 }
 
 .contacts-feedback .button {
     
     display: inline-block;
 
-    padding: 8px 28px;
+    padding: 10px 28px;
 }
 
 /* ------------------------------Breadcrumbs styling------------------------------------- */
@@ -1019,7 +1023,7 @@ a:focus .underscore_text {
     font-size: 14px;
     font-weight: 500;
 
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .icecream-filter-form {
@@ -1423,7 +1427,7 @@ a:focus .underscore_text {
 }
 
 .footer-navigation li {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 /* TODO: Refactor to 2 selectors */
@@ -1442,8 +1446,8 @@ a:focus .underscore_text {
     background-position: top left;
 
     position: absolute;
-    top: 3px;
-    left: -20px;
+    top: 4px;
+    left: -22px;
     
     width: 15px;
     height: 13px;
@@ -1720,3 +1724,8 @@ a:focus .underscore_text {
  /* input, img, div,section,a,ul,li,p,footer,header {
     outline: 1px solid red;
 }   */
+
+.banner-slider {
+    position: absolute;
+    top: 566px;
+}
