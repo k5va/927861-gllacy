@@ -204,22 +204,24 @@ a:focus .underscore_text {
     padding-bottom: 14px;
 }
 
+/* TODO: needs refactoring selector depth */
 .site-navigation li:hover .site-link,
-.site-navigation li:focus .site-link {
+.site-navigation .site-link:focus,
+.site-navigation li:focus-within .site-link {
     font-weight: bold;
     color: #323232;
 
     background-color: #f7f6f3;
 
     border-radius: 32px;
+    outline: none;
 }
 
 /* TODO: needs refactoring selector depth */
 .site-navigation > li:hover > .sub-navigation,
-.site-navigation > li:focus > .sub-navigation {
+.site-navigation li:focus-within .sub-navigation {
     display: block;
 }
-
 
 .site-link.selected {
     font-weight: bold;
@@ -284,6 +286,7 @@ a:focus .underscore_text {
     color: #323232;
 
     background-color: #fbded7;
+    outline: none;
 }
 
 .sub-link:active {
