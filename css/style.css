@@ -702,13 +702,22 @@ a:focus .underscore_text {
 
     margin: 0;
 
+    display: flex;
+    align-items: baseline;
+
     position: absolute;
-    left: 0;
+    left: -2px;
     top: 210px;
 }
 
-.icecream-price span {
+.icecream-price .currency {
+    margin-left: 8px;
+}
+
+.icecream-price .weight {
     font-size: 30px;
+    
+    margin-left: 3px;
 }
 
 .icecream-name {
@@ -853,7 +862,7 @@ a:focus .underscore_text {
     background-repeat: no-repeat;
     background-image: url("../img/blog-icecream.jpg");
 
-    padding: 22px 19px 81px 19px;
+    padding: 22px 19px 80px 19px;
 
     width: 560px;
 }
