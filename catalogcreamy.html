@@ -69,12 +69,14 @@
             <form class="icecream-filter-form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Сортировка:</legend>
-                    <select class="filter-sort" name="filter_sort">
-                        <option value="popularity" selected>по популярности</option>
-                        <option value="cheap_first">сначала недорогие</option>
-                        <option value="expensive_first">сначала дорогие</option>
-                        <option value="fat_content">по жирности</option>
-                    </select>
+                    <div class="filter-sort">
+                        <select name="filter_sort">
+                            <option value="popularity" selected>по популярности</option>
+                            <option value="cheap_first">сначала недорогие</option>
+                            <option value="expensive_first">сначала дорогие</option>
+                            <option value="fat_content">по жирности</option>
+                        </select>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Цена:</legend>
@@ -409,7 +411,7 @@
                 </tr>
                 <tr class="cart-item">
                     <td class="cart-remove">
-                        <button type="button" class="cart-remove-button">X
+                        <button type="button" class="cart-remove-button">
                             <span class="visually-hidden">Удалить</span>
                         </button>
                     </td>
@@ -422,7 +424,7 @@
                 </tr>
                 <tr class="cart-item">
                     <td class="cart-remove">
-                        <button type="button" class="cart-remove-button">X
+                        <button type="button" class="cart-remove-button">
                             <span class="visually-hidden">Удалить</span>
                         </button>
                     </td>

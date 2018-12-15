@@ -1074,20 +1074,42 @@ a:focus .underscore_text {
 }
 
 .filter-sort {
+    position: relative; 
+}
+
+.filter-sort select {
     color: inherit;
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
 
-    padding: 8px 15px 9px 10px;
+    padding: 8px 33px 11px 15px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 32px;
     border: none;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
-.filter-sort:hover,
-.filter-sort:active,
-.filter-sort:focus {
+.filter-sort::before {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 1);
+
+    position: absolute;
+    top: 14px;
+    right: 15px; 
+}
+
+.filter-sort select:hover,
+.filter-sort select:active, /*TODO: needs active?s*/
+.filter-sort select:focus {
     outline: none;
     color: #323232;
 }
@@ -1340,6 +1362,10 @@ a:focus .underscore_text {
     justify-content: flex-end;
 }
 
+.pagination-item {
+    margin-right: 2px;
+}
+
 .pagination-item button {
     line-height: 18px;
     font-size: 16px;
@@ -1376,6 +1402,11 @@ a:focus .underscore_text {
     color: #323232;
 
     background-color: #ffffff;
+}
+
+.pagination-back button,
+.pagination-forth button {
+    width: 20px;
 }
 
 .pagination-back button::before,
@@ -1436,7 +1467,7 @@ a:focus .underscore_text {
 }
 
 .footer-social li {
-    margin-right: 11px;
+    margin-right: 10px;
 }
 
 .footer-social li:last-child {
@@ -1682,11 +1713,11 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 
     border-radius: 5px;   
-    padding: 20px 15px;
+    padding: 30px 15px 20px 15px;
 
     position: absolute;
-    top: 60px;
-    left: calc(50% + 35px);
+    top: 59px;
+    left: calc(50% + 34px);
 }
 
 .checkout-form .wrapper {
@@ -1696,11 +1727,11 @@ a:focus .underscore_text {
 
 .cart-list {
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
 .cart-list td {
-    padding-bottom: 20px;
+    vertical-align: top;
+    height: 50px;
 }
 
 .cart-remove {
@@ -1708,14 +1739,19 @@ a:focus .underscore_text {
 }
 
 .cart-image {
+    position: relative;
+
     width: 47px;
 }
 
 .cart-image img {
-    vertical-align: bottom;
+    position: absolute;
+    top: -8px;
 }
 
 .cart-name {
+    padding-right: 20px;
+
     width: 247px;
 }
 
@@ -1732,10 +1768,39 @@ a:focus .underscore_text {
 }
 
 .cart-remove-button {
+    cursor: pointer;
+
     background-color: transparent;
     border: none;
 
     padding: 0;
+
+    position: relative;
+
+    width: 11px;
+    height: 11px;
+}
+
+.cart-remove-button::before,
+.cart-remove-button::after {
+    content: "";
+
+    background-color: #323232;
+    
+    width: 15px;
+    height: 1px;
+
+    position: absolute;
+    top: 5px;
+    left: -2px;
+}
+
+.cart-remove-button::before {
+    transform: rotate(45deg);
+}
+
+.cart-remove-button::after {
+    transform: rotate(135deg);
 }
 
 .cart-total {
@@ -1747,8 +1812,11 @@ a:focus .underscore_text {
 .cart-total td {
     text-align: right;
 
-    padding: 10PX 0 0 0;
+    padding: 0;
     border-top: 1px solid #cacac7;
+
+    height: 46px;
+    vertical-align: middle;
 }
 
 .checkout-form .button {
