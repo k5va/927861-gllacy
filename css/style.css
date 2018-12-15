@@ -103,7 +103,7 @@ a {
     font-size: 13px;
     font-weight: normal;
 
-    /* text-decoration: underline; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .link:hover,
@@ -111,6 +111,7 @@ a {
     outline: none;
 
     color: #ffbc9e;
+    border-color:rgba(255, 188, 158, 0.3);
 }
 
 /* ------------------------------Form inputs styling------------------------------------- */
@@ -150,10 +151,10 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-a:hover .underscore_text,
+/* a:hover .underscore_text,
 a:focus .underscore_text {
     border-bottom: none;
-}
+} */
 
 /* ------------------------------Header styling------------------------------------- */
 
@@ -1531,7 +1532,16 @@ a:focus .underscore_text {
     line-height: 24px;
     font-size: 13px;
     font-weight: normal;
-    color: #323232;
+    color: rgba(50, 50, 50);
+
+    border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+}
+
+.login-form-link:hover,
+.login-form-link:active {
+    color: rgb(232, 77, 55);
+
+    border-color: rgba(232, 77, 55, 0.3);
 }
 
 .login-form-actions-wrapper {
