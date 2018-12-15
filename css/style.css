@@ -512,6 +512,12 @@ a:focus .underscore_text {
     padding: 8px 41px 12px 41px;
 }
 
+/* TODO: Needs testing */
+.banner-slider {
+    position: absolute;
+    top: 566px;
+}
+
 .banner-controls {
     display: flex;
 
@@ -523,6 +529,7 @@ a:focus .underscore_text {
 .banner-controls label {
 
     cursor: pointer;
+    opacity: 0.8;
 
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -531,6 +538,16 @@ a:focus .underscore_text {
 
     width: 21px;
     height: 21px;
+}
+
+.banner-controls label:hover {
+    opacity: 1;
+}
+
+#banner-1:focus ~ .index-main label[for = "banner-1"],
+#banner-2:focus ~ .index-main label[for = "banner-2"],
+#banner-3:focus ~ .index-main label[for = "banner-3"] {
+    opacity: 1;
 }
 
 /* TODO: change page bg color*/
@@ -1724,8 +1741,3 @@ a:focus .underscore_text {
  /* input, img, div,section,a,ul,li,p,footer,header {
     outline: 1px solid red;
 }   */
-
-.banner-slider {
-    position: absolute;
-    top: 566px;
-}
