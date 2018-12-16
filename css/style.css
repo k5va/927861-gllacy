@@ -1091,6 +1091,8 @@ a:focus .underscore_text {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+
+    position: relative;
 }
 
 .filter-sort::before {
@@ -1100,7 +1102,7 @@ a:focus .underscore_text {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 10px solid rgba(255, 255, 255, 1);
+    border-top: 10px solid #ffffff;
 
     position: absolute;
     top: 14px;
@@ -1108,10 +1110,14 @@ a:focus .underscore_text {
 }
 
 .filter-sort select:hover,
-.filter-sort select:active, /*TODO: needs active?s*/
 .filter-sort select:focus {
     outline: none;
     color: #323232;
+}
+
+.filter-sort:focus-within::before,
+.filter-sort:hover::before {
+    border-top: 10px solid #323232;
 }
 
 .filter-price-range {
