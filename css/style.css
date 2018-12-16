@@ -57,6 +57,11 @@ a {
     text-decoration: none;
 }
 
+.site-wrapper {
+    position: relative;
+    z-index: 0;
+}
+
 .container {
     width: 1200px;
 
@@ -546,23 +551,34 @@ a:focus .underscore_text {
     opacity: 1;
 }
 
-#banner-1:focus ~ .index-main label[for = "banner-1"],
-#banner-2:focus ~ .index-main label[for = "banner-2"],
-#banner-3:focus ~ .index-main label[for = "banner-3"] {
+#banner-1:focus ~ .site-wrapper label[for = "banner-1"],
+#banner-2:focus ~ .site-wrapper label[for = "banner-2"],
+#banner-3:focus ~ .site-wrapper label[for = "banner-3"] {
     opacity: 1;
 }
 
-/* TODO: change page bg color*/
-#banner-1:checked ~ .index-main label[for = "banner-1"],
-#banner-2:checked ~ .index-main label[for = "banner-2"],
-#banner-3:checked ~ .index-main label[for = "banner-3"] {
+#banner-1:checked ~ .site-wrapper label[for = "banner-1"],
+#banner-2:checked ~ .site-wrapper label[for = "banner-2"],
+#banner-3:checked ~ .site-wrapper label[for = "banner-3"] {
     background-color: #ffffff;
 }
 
-#banner-1:checked ~ .index-main .main-banner-item:nth-child(1),
-#banner-2:checked ~ .index-main .main-banner-item:nth-child(2),
-#banner-3:checked ~ .index-main .main-banner-item:nth-child(3) {
+#banner-1:checked ~ .site-wrapper .main-banner-item:nth-child(1),
+#banner-2:checked ~ .site-wrapper .main-banner-item:nth-child(2),
+#banner-3:checked ~ .site-wrapper .main-banner-item:nth-child(3) {
     display: block;
+}
+
+#banner-1:checked ~ .site-wrapper {
+    background-color: #849d8f;
+}
+
+#banner-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+}
+
+#banner-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
 }
 
 
@@ -1451,7 +1467,7 @@ a:focus .underscore_text {
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 29px;
+    padding-bottom: 29px;
 }
 
 .footer-social {
