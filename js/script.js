@@ -1,17 +1,17 @@
-const searchLink = document.querySelector(".user-navigation .search-link");
-const searchForm = document.querySelector(".search-form");
-const loginLink = document.querySelector(".user-navigation .login-link");
-const loginForm = document.querySelector(".login-form");
-const showFeedbackFormButton = document.querySelector(".contacts-feedback .button");
-const feedbackForm = document.querySelector(".modal-feedback");
-const closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
-const showCartLink = document.querySelector(".user-navigation .cart-link");
-const checkoutForm = showCartLink.classList.contains("cart-loaded") ?
+var searchLink = document.querySelector(".user-navigation .search-link");
+var searchForm = document.querySelector(".search-form");
+var loginLink = document.querySelector(".user-navigation .login-link");
+var loginForm = document.querySelector(".login-form");
+var showFeedbackFormButton = document.querySelector(".contacts-feedback .button");
+var feedbackForm = document.querySelector(".modal-feedback");
+var closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
+var showCartLink = document.querySelector(".user-navigation .cart-link");
+var checkoutForm = showCartLink.classList.contains("cart-loaded") ?
     document.querySelector(".checkout-form") : 
     null;
-const siteNavigation = document.querySelector(".site-navigation");
+var siteNavigation = document.querySelector(".site-navigation");
 
-searchLink.addEventListener("mouseover", (event) => {
+searchLink.addEventListener("mouseover", function(event) {
     loginForm.style.display = "none";
     if (checkoutForm !== null) {
         checkoutForm.style.display = "none";
@@ -20,13 +20,13 @@ searchLink.addEventListener("mouseover", (event) => {
     searchForm.style.display = "block";
 });
 
-searchForm.addEventListener("mouseleave", (event) => {
+searchForm.addEventListener("mouseleave", function(event) {
     if (event.relatedTarget !== null) {
         searchForm.style.display = "none";
     }
 });
 
-loginLink.addEventListener("mouseover", (event) => {
+loginLink.addEventListener("mouseover", function(event) {
     searchForm.style.display = "none";
     if (checkoutForm !== null) {
         checkoutForm.style.display = "none";
@@ -35,24 +35,24 @@ loginLink.addEventListener("mouseover", (event) => {
     loginForm.style.display = "block";
 });
 
-loginForm.addEventListener("mouseleave", (event) => {
+loginForm.addEventListener("mouseleave", function(event) {
     if (event.relatedTarget !== null) {
         loginForm.style.display = "none";
     }
 });
 
 if (showFeedbackFormButton !== null) {
-    showFeedbackFormButton.addEventListener("click", (event) => {
+    showFeedbackFormButton.addEventListener("click", function(event) {
         event.preventDefault();
         feedbackForm.style.display = "block";
     });
     
-    closeFeedbackFormButton.addEventListener("click", (event) => {
+    closeFeedbackFormButton.addEventListener("click", function(event) {
         feedbackForm.style.display = "none";
     });
 }
 
-showCartLink.addEventListener("mouseover", (event) => {
+showCartLink.addEventListener("mouseover", function(event) {
     loginForm.style.display = "none";
     searchForm.style.display = "none";
     
@@ -62,14 +62,14 @@ showCartLink.addEventListener("mouseover", (event) => {
 });
 
 if (checkoutForm !== null) {
-    checkoutForm.addEventListener("mouseleave", (event) => {
+    checkoutForm.addEventListener("mouseleave", function(event) {
         if (event.relatedTarget !== null) {
             checkoutForm.style.display = "none";
         }
     });
 }
 
-siteNavigation.addEventListener("mouseover", (event) => {
+siteNavigation.addEventListener("mouseover", function(event) {
     loginForm.style.display = "none";
     searchForm.style.display = "none";
 
