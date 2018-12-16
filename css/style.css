@@ -1,24 +1,21 @@
 
-/* TODO:
-    - add text-align
-    - add background images 
-    - correct default outline
-*/
-
 /* ------------------------------Basic elements styling------------------------------------- */
 
 *, 
 *::before, 
 *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .content-box-component {
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -34,7 +31,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -77,25 +76,53 @@ a {
     text-align: center;
     color: #ffffff;
 
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
+
+    background-image: -webkit-linear-gradient(bottom, #e74a35, #f26843);
+
+    background-image: -o-linear-gradient(bottom, #e74a35, #f26843);
+
     background-image: linear-gradient(to top, #e74a35, #f26843);
     
     border: none;
     border-radius: 64px;
-    box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+    -webkit-box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+            box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
 .button:hover,
 .button:focus {
     outline: none;
 
-    box-shadow: 0px 2px 2px 0 #ac1000;
+    -webkit-box-shadow: 0px 2px 2px 0 #ac1000;
+
+            box-shadow: 0px 2px 2px 0 #ac1000;
+    background-image: 
+        -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))),
+        -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
+    background-image: 
+        -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        -webkit-linear-gradient(bottom, #e74a35, #f26843);
+    background-image: 
+        -o-linear-gradient(bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        -o-linear-gradient(bottom, #e74a35, #f26843);
     background-image: 
         linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
         linear-gradient(to top, #e74a35, #f26843);
 }
 
 .button:active {
-    box-shadow: inset 0px 2px 2px 0 #942718;
+    -webkit-box-shadow: inset 0px 2px 2px 0 #942718;
+            box-shadow: inset 0px 2px 2px 0 #942718;
+    background-image: 
+        -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.07)), to(rgba(0, 0, 0, 0.07))),
+        -webkit-gradient(linear, left top, left bottom, from(#e74a35), to(#f26843));
+    background-image: 
+        -webkit-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+        -webkit-linear-gradient(top, #e74a35, #f26843);
+    background-image: 
+        -o-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+        -o-linear-gradient(top, #e74a35, #f26843);
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
         linear-gradient(to bottom, #e74a35, #f26843);
@@ -134,20 +161,37 @@ a {
     border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
+.input-field::-webkit-input-placeholder {
+    font-weight: normal;
+    color: #999999;
+}
+
+.input-field:-ms-input-placeholder {
+    font-weight: normal;
+    color: #999999;
+}
+
+.input-field::-ms-input-placeholder {
+    font-weight: normal;
+    color: #999999;
+}
+
 .input-field::placeholder {
     font-weight: normal;
     color: #999999;
 }
 
 .input-field:hover {
-    box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.52);
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.52);
+            box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.52);
 }
 
 .input-field:focus {
     outline: none;
     
     border: 1px solid rgba(46, 136, 228, 0.52);
-    box-shadow: inset 0px 0px 0px 1px rgba(46, 136, 228, 0.52);
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(46, 136, 228, 0.52);
+            box-shadow: inset 0px 0px 0px 1px rgba(46, 136, 228, 0.52);
 }
 
 /* ------------------------------Underscore styling------------------------------------- */
@@ -166,8 +210,15 @@ a:focus .underscore_text {
 .main-header {
     padding-top: 9px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .main-header-logo {
@@ -175,6 +226,8 @@ a:focus .underscore_text {
 }
 
 .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin-bottom: 2px;
@@ -187,9 +240,16 @@ a:focus .underscore_text {
     font-size: 16px;
     font-weight: bold;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     
     margin: 0;
     padding: 20px 0 0 0;
@@ -247,7 +307,8 @@ a:focus .underscore_text {
     color: #323232;
 
     background-color: #f8f7f4;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 
     display: none;
@@ -309,8 +370,12 @@ a:focus .underscore_text {
 }
 
 .user-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 
     padding-top: 13px;
     margin-left: auto;
@@ -424,7 +489,8 @@ a:focus .underscore_text {
 }
 
 .contact-info-wrapper {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 
     position: relative;
     top: -7px;
@@ -448,15 +514,25 @@ a:focus .underscore_text {
 /* ------------------------------Main section styling------------------------------------- */
 
 .main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     margin-bottom: 39px;
 }
 
 .catalog-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     margin-bottom: 17px;
 }
@@ -526,6 +602,8 @@ a:focus .underscore_text {
 }
 
 .banner-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     position: absolute;
@@ -587,8 +665,14 @@ a:focus .underscore_text {
 .special-offers {
     margin-bottom: 40px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .special-offer {
@@ -654,9 +738,16 @@ a:focus .underscore_text {
     padding: 0;
     margin: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .icecream-item {
@@ -687,7 +778,8 @@ a:focus .underscore_text {
     background-color: rgba(255, 255, 255, 0.2);
 
     border-radius: 5px;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
     width: 293px;
  
@@ -719,8 +811,14 @@ a:focus .underscore_text {
 
     margin: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
 
     position: absolute;
     left: -2px;
@@ -797,8 +895,13 @@ a:focus .underscore_text {
     margin: 0;
     padding: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .feature-item {
@@ -863,8 +966,12 @@ a:focus .underscore_text {
 /* ------------------------------New blog record styling------------------------------------- */
 
 .new-blog-subscribe-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .new-blog-record {
@@ -952,8 +1059,14 @@ a:focus .underscore_text {
 
 .contacts {
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     margin-bottom: 18px;
 
@@ -1037,6 +1150,10 @@ a:focus .underscore_text {
     padding: 0;
     margin: -30px 0 5px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
 }
 
@@ -1075,9 +1192,14 @@ a:focus .underscore_text {
 }
 
 .icecream-filter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .icecream-filter-form legend {
@@ -1235,6 +1357,10 @@ a:focus .underscore_text {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 32px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
 }
 
@@ -1299,6 +1425,10 @@ a:focus .underscore_text {
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 32px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
 
     display: flex;
 }
@@ -1375,7 +1505,8 @@ a:focus .underscore_text {
     color: #323232;
     
     border: none;
-    box-shadow: inset 0px 2px 1px 0 #696969;
+    -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
+            box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 /* ------------------------------Pagination styling------------------------------------- */
@@ -1385,8 +1516,14 @@ a:focus .underscore_text {
     padding: 0;
     margin: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .pagination-item {
@@ -1450,13 +1587,17 @@ a:focus .underscore_text {
 }
 
 .pagination-back button::before {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
     top: 8px;
     left: 2px;
 }
 
 .pagination-forth button::before {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 8px;
     right: 2px;
 }
@@ -1464,8 +1605,12 @@ a:focus .underscore_text {
 /* ------------------------------Footer styling------------------------------------- */
 
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding-bottom: 29px;
 }
@@ -1475,6 +1620,10 @@ a:focus .underscore_text {
 
     margin: 0 3px 0 0;
     padding: 18px 0 0;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
 
     display: flex;
 }
@@ -1488,9 +1637,15 @@ a:focus .underscore_text {
 
     width: 304px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
 }
 
 .footer-social li {
@@ -1508,7 +1663,8 @@ a:focus .underscore_text {
 .social-button img {
     border-radius: 33px;
     border: 3px solid rgba(255, 255, 255, 0.5);
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
 }
 
 .footer-navigation li {
@@ -1613,8 +1769,12 @@ a:focus .underscore_text {
 }
 
 .login-form-actions-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /* ------------------------------Search form styling------------------------------------- */
@@ -1653,12 +1813,19 @@ a:focus .underscore_text {
     z-index: 10;
     top: 100px;
     left: 50%;
-    transform: translateX(-50%);   
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);   
 }
 
 .modal-feedback form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .modal-feedback b {
@@ -1725,11 +1892,15 @@ a:focus .underscore_text {
 }
 
 .modal-close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .modal-close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 /* ------------------------------Checkout form styling------------------------------------- */
@@ -1752,8 +1923,13 @@ a:focus .underscore_text {
 }
 
 .checkout-form .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .cart-list {
@@ -1827,11 +2003,15 @@ a:focus .underscore_text {
 }
 
 .cart-remove-button::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .cart-remove-button::after {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
 }
 
 .cart-total {
@@ -1854,4 +2034,3 @@ a:focus .underscore_text {
     padding: 10px 15px;
     margin-left: auto;
 }
-
