@@ -251,6 +251,7 @@ a:focus .underscore_text {
     overflow: hidden;
 
     position: absolute;
+    z-index: 10;
     left: -7px;
     top: 31px;
 
@@ -1550,6 +1551,7 @@ a:focus .underscore_text {
     padding: 20px 17px 20px 19px;
 
     position: absolute;
+    z-index: 10;
     top: 60px;
     left: calc(50% + 185px);
 }
@@ -1608,6 +1610,7 @@ a:focus .underscore_text {
     padding: 20px 15px;
 
     position: absolute;
+    z-index: 10;
     top: 60px;
     left: calc(50% + 20px);
 }
@@ -1631,6 +1634,7 @@ a:focus .underscore_text {
     padding: 20px 26px 27px 24px;
 
     position: fixed;
+    z-index: 10;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);   
@@ -1726,6 +1730,7 @@ a:focus .underscore_text {
     padding: 30px 15px 20px 15px;
 
     position: absolute;
+    z-index: 10;
     top: 59px;
     left: calc(50% + 34px);
 }
@@ -1834,7 +1839,3 @@ a:focus .underscore_text {
     margin-left: auto;
 }
 
-/* TODO: remove me */
- /* input, img, div,section,a,ul,li,p,footer,header {
-    outline: 1px solid red;
-}   */
