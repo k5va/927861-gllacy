@@ -1635,7 +1635,7 @@ a:focus .underscore_text {
     margin: 0;
     padding: 15px 0 0;
 
-    width: 304px;
+    width: 306px;
 
     display: -webkit-box;
 
@@ -1695,7 +1695,7 @@ a:focus .underscore_text {
 }
 
 .footer-navigation li:nth-child(odd) {
-    width: 111px;
+    width: 112px;
     margin-right: 31px;
 }
 
