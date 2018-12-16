@@ -1094,6 +1094,7 @@ a:focus .underscore_text {
 .contacts iframe {
     position: absolute;
     z-index: 1;
+    left: 0;
 }
 
 .contacts-feedback {
