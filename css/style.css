@@ -947,6 +947,11 @@ a:focus .underscore_text {
     padding: 0;
 }
 
+.contacts iframe {
+    position: absolute;
+    z-index: 1;
+}
+
 .contacts-feedback {
     line-height: 20px;
     font-size: 14px;
@@ -961,6 +966,7 @@ a:focus .underscore_text {
     width: 302px;
 
     position: absolute;
+    z-index: 2;
     top: 63px;
     left: calc(50% + 271px);
 }
