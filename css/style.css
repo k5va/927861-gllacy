@@ -1238,6 +1238,11 @@ a:focus .underscore_text {
     position: relative;
 }
 
+/*To remove button from IE11 */
+.filter-sort select::-ms-expand {
+    display: none;
+}
+
 .filter-sort::before {
     content: "";
 
