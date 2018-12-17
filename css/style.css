@@ -678,15 +678,12 @@ a:focus .underscore_text {
 
 .special-offers {
     margin-bottom: 40px;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .special-offer {
@@ -703,13 +700,13 @@ a:focus .underscore_text {
     width: 560px;
 }
 
-/* FIXME: Why 2 and 3? */
-.special-offer:nth-child(2) {
+.special-offers .special-offer:nth-child(2) {
     background-image: url("../img/special-offer-strawberry.jpg");
 }
 
-.special-offer:nth-child(3) {
+.special-offers .special-offer:nth-child(3) {
     background-image: url("../img/special-offer-chocolate.jpg");
+    margin-left: auto;
 }
 
 .special-offer-header {
