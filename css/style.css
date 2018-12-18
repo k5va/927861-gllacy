@@ -1351,8 +1351,8 @@ a:focus .underscore_text {
 
 .filter-price-controls button {
     border-radius: 100%;
-    border: 7px solid rgba(255, 255, 255, 0.8);
-    background-color: #849d8f;
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    background-color: #ababab;
     
     padding: 0;
 
