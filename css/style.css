@@ -1045,6 +1045,10 @@ a:focus .underscore_text {
     padding: 28px 20px 35px 21px;
 }
 
+.subscribe form {
+    display: flex;
+}
+
 .subscribe p {
     line-height: 22px;
     font-size: 16px;
