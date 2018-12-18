@@ -12,68 +12,80 @@ var checkoutForm = showCartLink.classList.contains("cart-loaded") ?
 var siteNavigation = document.querySelector(".site-navigation");
 
 searchLink.addEventListener("mouseover", function(event) {
-    loginForm.style.display = "none";
-    if (checkoutForm !== null) {
-        checkoutForm.style.display = "none";
-    }
-
-    searchForm.style.display = "block";
+    hideForm(loginForm);
+    hideForm(checkoutForm);
+    showForm(searchForm);
 });
 
 searchForm.addEventListener("mouseleave", function(event) {
     if (event.relatedTarget !== null) {
-        searchForm.style.display = "none";
+        hideForm(searchForm);
     }
 });
 
 loginLink.addEventListener("mouseover", function(event) {
-    searchForm.style.display = "none";
-    if (checkoutForm !== null) {
-        checkoutForm.style.display = "none";
-    }
-
-    loginForm.style.display = "block";
+    hideForm(searchForm);
+    hideForm(checkoutForm);
+    showForm(loginForm);
 });
 
 loginForm.addEventListener("mouseleave", function(event) {
     if (event.relatedTarget !== null) {
-        loginForm.style.display = "none";
+        hideForm(loginForm);
     }
 });
 
 if (showFeedbackFormButton !== null) {
     showFeedbackFormButton.addEventListener("click", function(event) {
         event.preventDefault();
-        feedbackForm.style.display = "block";
+        showModalForm(feedbackForm);
     });
     
     closeFeedbackFormButton.addEventListener("click", function(event) {
-        feedbackForm.style.display = "none";
+        hideModalForm(feedbackForm);
     });
 }
 
 showCartLink.addEventListener("mouseover", function(event) {
-    loginForm.style.display = "none";
-    searchForm.style.display = "none";
-    
-    if (checkoutForm !== null) {
-        checkoutForm.style.display = "block";     
-    }
+    hideForm(loginForm);
+    hideForm(searchForm);
+    showForm(checkoutForm);
 });
 
 if (checkoutForm !== null) {
     checkoutForm.addEventListener("mouseleave", function(event) {
         if (event.relatedTarget !== null) {
-            checkoutForm.style.display = "none";
+            hideForm(checkoutForm);
         }
     });
 }
 
 siteNavigation.addEventListener("mouseover", function(event) {
-    loginForm.style.display = "none";
-    searchForm.style.display = "none";
-
-    if (checkoutForm !== null) {
-        checkoutForm.style.display = "none";
-    }
+    hideForm(loginForm);
+    hideForm(searchForm);
+    hideForm(checkoutForm);
 });
+
+function hideForm(form) {
+    if (form !== null) {
+        form.classList.add("hidden");
+    }
+}
+
+function showForm(form) {
+    if (form !== null) {
+        form.classList.remove("hidden");
+    }
+}
+
+function showModalForm(form) {
+    if (form !== null) {
+        form.classList.add("modal-show");
+    }
+}
+
+function hideModalForm(form) {
+    if (form !== null) {
+        form.classList.remove("modal-show");
+    }
+}
