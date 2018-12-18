@@ -10,6 +10,7 @@ var checkoutForm = showCartLink.classList.contains("cart-loaded") ?
     document.querySelector(".checkout-form") : 
     null;
 var siteNavigation = document.querySelector(".site-navigation");
+var modalLayer = document.querySelector(".modal-layer");
 
 searchLink.addEventListener("mouseover", function(event) {
     hideForm(loginForm);
@@ -81,11 +82,21 @@ function showForm(form) {
 function showModalForm(form) {
     if (form !== null) {
         form.classList.add("modal-show");
+        showModalLayer();
     }
 }
 
 function hideModalForm(form) {
     if (form !== null) {
         form.classList.remove("modal-show");
+        hideModalLayer();
     }
+}
+
+function showModalLayer() {
+    modalLayer.style.display = "block";
+}
+
+function hideModalLayer() {
+    modalLayer.style.display = "none";
 }
