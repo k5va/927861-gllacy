@@ -697,7 +697,7 @@ a:focus .underscore_text {
 
     background-color: #000000;
     background-position: top left;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
     border-radius: 15px;
 
