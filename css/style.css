@@ -51,6 +51,12 @@ body {
     background-color: #849d8f;
 }
 
+.inner-page {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), #849d8f);
+    background-size: 100% 656px;
+    background-repeat: no-repeat;
+}
+
 a {
     color: inherit;
     text-decoration: none;
