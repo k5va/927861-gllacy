@@ -49,6 +49,8 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
+
+    min-width: 1200px;
 }
 
 .inner-page {
