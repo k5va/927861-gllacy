@@ -1586,9 +1586,10 @@ a:focus .underscore_text {
     
     background-color: rgba(255, 255, 255, 0.2);
     
-    border: 2px solid #ffffff;
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+    border: none;
     border-radius: 37px;
-    padding: 8px 25px 8px 30px;
+    padding: 9px 28px 11px 30px;
 }
 
 .filter-button:hover,
