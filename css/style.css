@@ -748,7 +748,6 @@ a:focus .underscore_text {
 .special-offer {
     text-align: right;
 
-    background-color: #000000;
     background-position: top left;
     background-repeat: repeat;
 
@@ -760,10 +759,12 @@ a:focus .underscore_text {
 }
 
 .special-offers .special-offer:nth-child(2) {
+    background-color: #7e0115;
     background-image: url("../img/special-offer-strawberry.jpg");
 }
 
 .special-offers .special-offer:nth-child(3) {
+    background-color: #67453a;
     background-image: url("../img/special-offer-chocolate.jpg");
     margin-left: auto;
 }
