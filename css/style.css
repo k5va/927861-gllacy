@@ -1105,6 +1105,8 @@ a:focus .underscore_text {
     background-color: #f8f7f4;
 
     padding: 28px 20px 36px 21px;
+
+    height: 100%;
 }
 
 .subscribe form {
