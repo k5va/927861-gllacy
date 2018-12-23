@@ -1073,7 +1073,9 @@ a:focus .underscore_text {
     font-weight: bold;
     text-decoration: underline;
 
-    display: inline-block;
+    border: none;
+
+    display: block;
 
     width: 281px;
 }
