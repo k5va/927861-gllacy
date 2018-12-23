@@ -705,8 +705,11 @@ a:focus .underscore_text {
 }
 
 #banner-1:checked ~ .site-wrapper label[for = "banner-1"],
+#banner-1:active ~ .site-wrapper label[for = "banner-1"],
 #banner-2:checked ~ .site-wrapper label[for = "banner-2"],
-#banner-3:checked ~ .site-wrapper label[for = "banner-3"] {
+#banner-2:active ~ .site-wrapper label[for = "banner-2"],
+#banner-3:checked ~ .site-wrapper label[for = "banner-3"],
+#banner-3:active ~ .site-wrapper label[for = "banner-3"] {
     background-color: #ffffff;
 }
 
