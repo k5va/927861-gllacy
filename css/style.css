@@ -331,7 +331,8 @@ a:focus .underscore_text {
 
 /* TODO: needs refactoring selector depth */
 .site-navigation li:hover .site-link,
-.site-navigation .site-link:focus {
+.site-navigation .site-link:focus,
+.site-navigation .site-link:active {
     font-weight: bold;
     color: #323232;
 
@@ -339,6 +340,11 @@ a:focus .underscore_text {
 
     border-radius: 32px;
     outline: none;
+}
+
+.site-navigation .site-link:active {
+    -webkit-box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+            box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
 }
 
 /*Won't work in IE and Edge*/
