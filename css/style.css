@@ -687,7 +687,6 @@ a:focus .underscore_text {
 .banner-controls label {
 
     cursor: pointer;
-    opacity: 0.8;
 
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -698,14 +697,11 @@ a:focus .underscore_text {
     height: 21px;
 }
 
-.banner-controls label:hover {
-    opacity: 1;
-}
-
+.banner-controls label:hover,
 #banner-1:focus ~ .site-wrapper label[for = "banner-1"],
 #banner-2:focus ~ .site-wrapper label[for = "banner-2"],
 #banner-3:focus ~ .site-wrapper label[for = "banner-3"] {
-    opacity: 1;
+    background-color:rgba(248, 247, 244, 0.4);
 }
 
 #banner-1:checked ~ .site-wrapper label[for = "banner-1"],
