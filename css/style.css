@@ -1419,7 +1419,7 @@ a:focus .underscore_text {
 
 .filter-price-controls button {
     border-radius: 100%;
-    border: 8px solid rgba(255, 255, 255, 0.8);
+    border: 8px solid rgba(255, 255, 255, 1);
     background-color: #ababab;
     
     padding: 0;
@@ -1428,24 +1428,38 @@ a:focus .underscore_text {
     z-index: 1;
     top: 8px;
 
-    width: 20px;
-    height: 20px;
+    width: 3px;
+    height: 3px;
 
     cursor: pointer;
+
+    box-sizing: content-box;
 }
 
 .filter-price-controls button:hover,
 .filter-price-controls button:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 1);
+    border-width: 10px;
 }
 
 .range-button-min {
     left: 35px;
 }
 
+.range-button-min:hover,
+.range-button-min:focus {
+    left: 33px;
+    top: 6px;
+}
+
 .range-button-max {
-    right: 67px;
+    right: 68px;
+}
+
+.range-button-max:hover,
+.range-button-max:focus {
+    right: 66px;
+    top: 6px;
 }
 
 .filter-fat-list {
