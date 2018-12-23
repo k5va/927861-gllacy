@@ -1618,6 +1618,7 @@ a:focus .underscore_text {
 .filter-button:active {
     color: #323232;
     
+    background-color: rgb(237, 237, 237);
     border: none;
     -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
             box-shadow: inset 0px 2px 1px 0 #696969;
