@@ -1174,7 +1174,7 @@ a:focus .underscore_text {
 
     border-radius: 15px;
 
-    padding: 28px 0 30px 25px;
+    padding: 28px 25px 30px 25px;
     width: 302px;
 
     position: absolute;
@@ -1219,9 +1219,9 @@ a:focus .underscore_text {
 
 .contacts-feedback .button {
     
-    display: inline-block;
+    display: block;
 
-    padding: 10px 28px;
+    padding: 10px 27px 10px 28px;
 }
 
 /* ------------------------------Breadcrumbs styling------------------------------------- */
