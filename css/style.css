@@ -1881,6 +1881,10 @@ a {
     left: calc(50% + 185px);
 }
 
+.inner-page .login-form {
+    left: calc(50% + 169px);
+}
+
 .login-form p {
     margin: 0;
 }
@@ -1942,6 +1946,10 @@ a {
     z-index: 10;
     top: 60px;
     left: calc(50% + 20px);
+}
+
+.inner-page .search-form {
+    left: calc(50% + 2px);
 }
 
 .search-form .input-field {
