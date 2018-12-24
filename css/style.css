@@ -21,21 +21,21 @@ html {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  -webkit-clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
 
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .hidden {
@@ -189,7 +189,6 @@ a {
 
 /* ------------------------------Links styling------------------------------------- */
 .link {
-    /* TODO: why font parameters here? */
     line-height: 16px;
     font-size: 13px;
     font-weight: normal;
@@ -259,11 +258,6 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* a:hover .underscore_text,
-a:focus .underscore_text {
-    border-bottom: none;
-} */
-
 /* ------------------------------Header styling------------------------------------- */
 
 .main-header {
@@ -326,7 +320,7 @@ a:focus .underscore_text {
     position: relative;
 }
 
-/*IE :active bug fix*/
+/*IE link :active bug fix*/
 .site-link::before {
     content: "";
     
@@ -337,13 +331,12 @@ a:focus .underscore_text {
     left: 0;
 }
 
-/* TODO: Hack on order not to loose dropdown menu */
-.site-navigation > li:hover {
+/* Hack on order not to loose dropdown menu */
+.site-navigation-item:nth-child(1):hover {
     padding-bottom: 14px;
 }
 
-/* TODO: needs refactoring selector depth */
-.site-navigation li:hover .site-link,
+.site-navigation-item:hover .site-link,
 .site-navigation .site-link:focus,
 .site-navigation .site-link:active {
     font-weight: bold;
@@ -361,7 +354,7 @@ a:focus .underscore_text {
 }
 
 /*Won't work in IE and Edge*/
-.site-navigation li:focus-within .site-link {
+.site-navigation-item:focus-within .site-link {
     font-weight: bold;
     color: #323232;
 
@@ -371,13 +364,12 @@ a:focus .underscore_text {
     outline: none;
 }
 
-/* TODO: needs refactoring selector depth */
-.site-navigation > li:hover > .sub-navigation {
+.site-navigation-item:hover > .sub-navigation {
     display: block;
 }
 
 /*Won't work in IE and Edge*/
-.site-navigation li:focus-within .sub-navigation {
+.site-navigation-item:focus-within .sub-navigation {
     display: block;
 }
 
@@ -416,7 +408,7 @@ a:focus .underscore_text {
     width: 143px; /* TODO: min-width or padding-right on li? */
 }
 
-.sub-navigation li:nth-child(1)::after {
+.sub-navigation-item:nth-child(1)::after {
     content: "";
 
     background-color: #323232;
@@ -436,7 +428,7 @@ a:focus .underscore_text {
     padding: 5px 0 8px 21px;
 }
 
-.sub-navigation li:nth-child(1) .sub-link {
+.sub-navigation-item:nth-child(1) .sub-link {
     padding-top: 10px;
     padding-bottom: 12px
 }
@@ -687,7 +679,6 @@ a:focus .underscore_text {
     padding: 8px 41px 12px 41px;
 }
 
-/* TODO: Needs testing */
 .banner-slider {
     position: absolute;
     top: 566px;
@@ -1571,7 +1562,7 @@ a:focus .underscore_text {
     margin-right: 0;
 }
 
-.filter-filler-option label {
+.filter-filler-label {
     position: relative;
 
     padding-left: 33px;
@@ -1595,7 +1586,7 @@ a:focus .underscore_text {
 }
 
 .filter-filler-option input[type="checkbox"]:focus + .checkbox-indicator,
-.filter-filler-option label:hover .checkbox-indicator { /* TODO: refactor depth */
+.filter-filler-label:hover .checkbox-indicator {
     opacity: 1;
 }
 
@@ -1765,7 +1756,6 @@ a:focus .underscore_text {
     display: flex;
 }
 
-/* TODO: Refactor to shadow not border */
 .footer-navigation {
     list-style: none;
 
@@ -1835,8 +1825,7 @@ a:focus .underscore_text {
     margin-bottom: 3px;
 }
 
-/* TODO: Refactor to 2 selectors */
-.footer-navigation li:nth-child(1) .footer-link {
+.footer-navigation-item:nth-child(1) .footer-link {
     font-weight: bold;
 }
 
