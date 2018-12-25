@@ -825,25 +825,28 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .icecream-item {
     text-align: center;
     
+    margin-top: 38px;
+    margin-right: 26px;
+
     width: 267px;
 
     position: relative;
 }
 
-.icecream-item {
-    margin-top: 38px;
-}
-
 .icecream-item:nth-child(-n + 4) {
     margin-top: 0;
+}
+
+.icecream-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .icecream-item::before {
