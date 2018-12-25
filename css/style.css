@@ -628,7 +628,7 @@ a {
     opacity: 0.3;
 
     margin: 0 auto;
-    margin-top: 27px;
+    margin-top: 30px;
 
     height: 1px;
     width: 1146px;
@@ -1650,17 +1650,14 @@ a {
     margin-right: 2px;
 }
 
-.pagination-item button {
+.pagination-item a {
     line-height: 18px;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
-    text-align: center;
 
     background-color: transparent;
 
-    padding: 0;
-    border: none;
     border-radius: 50px;  
 
     position: relative;
@@ -1669,41 +1666,45 @@ a {
     height: 26px;
 
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pagination-item button:disabled {
+.pagination-item a[disabled] {
     opacity: 0.2;
 }
 
-.pagination-item button:hover,
-.pagination-item button:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-item.selected button,
-.pagination-item button:active {
+.pagination-item.selected a,
+.pagination-item a:active {
     color: #323232;
 
     background-color: #ffffff;
 }
 
-.pagination-back button:hover,
-.pagination-back button:focus,
-.pagination-back button:active,
-.pagination-forth button:hover,
-.pagination-forth button:focus,
-.pagination-forth button:active {
+.pagination-back a:hover,
+.pagination-back a:focus,
+.pagination-back a:active,
+.pagination-forth a:hover,
+.pagination-forth a:focus,
+.pagination-forth a:active {
     background-color: transparent;
 }
 
-.pagination-back button,
-.pagination-forth button {
+.pagination-back a,
+.pagination-forth a {
     width: 20px;
 }
 
-.pagination-back button::before,
-.pagination-forth button::before {
+.pagination-back a::before,
+.pagination-forth a::before {
     content: "";
 
     border: solid #ffffff;
@@ -1715,7 +1716,7 @@ a {
     position: absolute;
 }
 
-.pagination-back button::before {
+.pagination-back a::before {
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
@@ -1723,7 +1724,7 @@ a {
     left: 2px;
 }
 
-.pagination-forth button::before {
+.pagination-forth a::before {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
