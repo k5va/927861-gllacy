@@ -1540,6 +1540,10 @@ a {
     height: 9px;
 }
 
+.filter-fat-option input[type="radio"]:disabled + .radio-indicator { 
+    opacity: 0.4;
+}
+
 .filter-filler-list {
     list-style: none;
     margin: 0;
@@ -1567,36 +1571,41 @@ a {
     margin-right: 0;
 }
 
-.filter-filler-label {
+.checkbox-indicator {    
+    opacity: 0.8;
+    
     position: relative;
 
     padding-left: 33px;
-
     cursor: pointer;
 }
 
-.filter-filler-option .checkbox-indicator {
-    
+.checkbox-indicator::before {
+    content: "";
+
     background-image: url("../img/svg/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: top left;
-    opacity: 0.8;
 
     position: absolute;
-    top: -2px;
-    left: 0px;
-    
+    top: -1px;
+    left: 1px;
+
     width: 26px;
     height: 23px;
 }
 
 .filter-filler-option input[type="checkbox"]:focus + .checkbox-indicator,
-.filter-filler-label:hover .checkbox-indicator {
+.checkbox-indicator:hover {
     opacity: 1;
 }
 
-.filter-filler-option input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-filler-option input[type="checkbox"]:checked + .checkbox-indicator::before {
     background-image: url("../img/svg/checkbox-on.svg");
+}
+
+.filter-filler-option input[type="checkbox"]:disabled + .checkbox-indicator {
+    opacity: 0.4;
 }
 
 .filter-button {
