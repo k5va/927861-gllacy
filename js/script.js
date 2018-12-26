@@ -5,10 +5,12 @@ var loginForm = document.querySelector(".login-form");
 var showFeedbackFormButton = document.querySelector(".contacts-feedback .button");
 var feedbackForm = document.querySelector(".modal-feedback");
 var closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-close");
+var feedbackName = document.querySelector(".modal-feedback [name='feedback_name']");
+var feedbackEmail = document.querySelector(".modal-feedback [name='feedback_email']");
+var feedbackMessage = document.querySelector(".modal-feedback [name='feedback_message']");
+
 var showCartLink = document.querySelector(".user-navigation .cart-link");
-var checkoutForm = showCartLink.classList.contains("cart-loaded") ?
-    document.querySelector(".checkout-form") : 
-    null;
+var checkoutForm = document.querySelector(".checkout-form");
 var siteNavigation = document.querySelector(".site-navigation");
 var modalLayer = document.querySelector(".modal-layer");
 
@@ -44,6 +46,15 @@ if (showFeedbackFormButton !== null) {
     
     closeFeedbackFormButton.addEventListener("click", function(event) {
         hideModalForm(feedbackForm);
+    });
+
+    feedbackForm.addEventListener("submit", function(event) {
+        if (!feedbackName.value || !feedbackEmail.value || !feedbackMessage.value) {
+            event.preventDefault();
+            feedbackForm.classList.remove("modal-error");
+            feedbackForm.offsetWidth = feedbackForm.offsetWidth;
+            feedbackForm.classList.add("modal-error");
+        }
     });
 }
 
@@ -89,6 +100,7 @@ function showModalForm(form) {
 function hideModalForm(form) {
     if (form !== null) {
         form.classList.remove("modal-show");
+        form.classList.remove("modal-error");
         hideModalLayer();
     }
 }
