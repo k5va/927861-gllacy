@@ -51,6 +51,7 @@ body {
     background-color: #849d8f;
 
     min-width: 1200px;
+    position: relative;
 }
 
 .inner-page {
