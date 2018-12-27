@@ -1704,8 +1704,9 @@ a {
     align-items: center;
 }
 
-.pagination-item a[disabled] {
+.pagination-item a.disabled {
     opacity: 0.2;
+    cursor: default;
 }
 
 .pagination-item a:hover,
