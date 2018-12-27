@@ -8,7 +8,6 @@ var closeFeedbackFormButton = document.querySelector(".modal-feedback .modal-clo
 var feedbackName = document.querySelector(".modal-feedback [name='feedback_name']");
 var feedbackEmail = document.querySelector(".modal-feedback [name='feedback_email']");
 var feedbackMessage = document.querySelector(".modal-feedback [name='feedback_message']");
-
 var showCartLink = document.querySelector(".user-navigation .cart-link");
 var checkoutForm = document.querySelector(".checkout-form");
 var siteNavigation = document.querySelector(".site-navigation");
